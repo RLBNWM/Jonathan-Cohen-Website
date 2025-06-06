@@ -15,7 +15,7 @@
         <div class="container" id="hero-img-container">
             <div class="row">
                 <div
-                    class="col-lg-5 col-sm-12 overshadow text-start p-5 text-light d-flex flex-column justify-content-between">
+                    class="col-lg-5 col-sm-12 overshadow text-lg-start p-5 text-light d-flex flex-column justify-content-between">
                     <h1><b>Unlock your potential. Create the life you deserve.</b></h1>
                     <p>Personalized coaching to help you gain clarity, overcome obstacles, and thrive with purpose.</p>
 
@@ -34,27 +34,109 @@
         </div>
     </section>
 
+
     <section class="services-section" id="services">
         <div class="container text-center">
             <h2>Jonathan Cohen's Services</h2>
-            <div class="row m-5 p-5 bg-dark justify-content-between">
-                <div class="col-4 p-5 bg-light rounded-4">
-                    <h2>Service Name Here</h2>
+            <div class="row m-5 p-5 justify-content-center">
+                <!-- Business/Executive coaching service and modal -->
+                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-4 service-box" data-bs-toggle="modal"
+                    data-bs-target="#busines-executive-coaching">
+                    <h3>Business/Executive Coaching</h3>
                 </div>
-                <div class="col-4 p-5 bg-light rounded-4">
-                    <h2>Service Name Here</h2>
+
+                <div class="modal fade" id="busines-executive-coaching" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content rounded-5">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen's Business &
+                                    Executive Coaching</h5>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn ci-btn rounded-5"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wellness Coaching service and modal -->
+
+                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-4 service-box" data-bs-toggle="modal"
+                    data-bs-target="#wellness-coaching-modal">
+                    <h3>Wellness (Holistic) Coaching</h3>
+                </div>
+
+                <div class="modal fade" id="wellness-coaching-modal" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content rounded-5">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Holistic Wellness
+                                    Coaching</h5>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support Groups/Communities service and modal -->
+
+                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-4 service-box" data-bs-toggle="modal"
+                    data-bs-target="#support-groups-modal">
+                    <h3>Support Groups/Communities</h3>
+                </div>
+
+                <div class="modal fade" id="support-groups-modal" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content rounded-5">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen hosted
+                                    Support Groups/Communities</h5>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <h2>Training/Workshops/Retreats/Adventures</h2>
             <div class="row m-5 p-5 bg-dark justify-content-between">
-                <div class="col-4 p-5 bg-light rounded-4">
-                    <h2>Service Name Here</h2>
+                <div class="col-lg-3 col-sm-5 p-5 m-2 rounded-4 service-box">
+                    <h3>Service Name</h3>
                 </div>
-                <div class="col-4 p-5 bg-light rounded-4">
-                    <h2>Service Name Here</h2>
+                <div class="col-lg-3 col-sm-5 p-5 m-2 rounded-4 service-box">
+                    <h3>Service Name</h3>
+                </div>
+                <div type="button" class="col-lg-3 col-sm-5 p-5 m-2 rounded-4 service-box" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">
+                    <h3>Service Name</h3>
                 </div>
             </div>
+
+            <!-- Button trigger modal -->
+            <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Launch static backdrop modal
+            </a>
         </div>
     </section>
+
+
 
     <section class="popular-programs-section" id="popular-programs-section"></section>
 
