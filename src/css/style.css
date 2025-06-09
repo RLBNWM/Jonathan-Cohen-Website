@@ -5,6 +5,7 @@ body {
     height: 100%;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    scroll-behavior: smooth;
     /* font-family: 'Azonix', sans-serif; */
 }
 
@@ -48,4 +49,10 @@ body {
 .service-box:hover {
     transform: translateY(-6px);
     box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Top programs */
+
+.top-programs-box {
+    height: 400px;
 }

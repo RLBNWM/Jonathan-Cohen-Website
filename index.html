@@ -5,6 +5,7 @@
     <!-- insert meta tags -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -40,7 +41,7 @@
             <h2>Jonathan Cohen's Services</h2>
             <div class="row m-5 p-5 justify-content-center">
                 <!-- Business/Executive coaching service and modal -->
-                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-4 service-box" data-bs-toggle="modal"
+                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
                     data-bs-target="#busines-executive-coaching">
                     <h3>Business/Executive Coaching</h3>
                 </div>
@@ -51,7 +52,7 @@
                         <div class="modal-content rounded-5">
                             <div class="modal-header">
                                 <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen's Business &
-                                    Executive Coaching</h5>
+                                    Executive Coaching</h3>
                             </div>
                             <div class="modal-body">
                                 ...
@@ -66,7 +67,7 @@
 
                 <!-- Wellness Coaching service and modal -->
 
-                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-4 service-box" data-bs-toggle="modal"
+                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
                     data-bs-target="#wellness-coaching-modal">
                     <h3>Wellness (Holistic) Coaching</h3>
                 </div>
@@ -83,7 +84,8 @@
                                 ...
                             </div>
                             <div class="modal-footer justify-content-center">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn ci-btn rounded-5"
+                                    data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -91,7 +93,7 @@
 
                 <!-- Support Groups/Communities service and modal -->
 
-                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-4 service-box" data-bs-toggle="modal"
+                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
                     data-bs-target="#support-groups-modal">
                     <h3>Support Groups/Communities</h3>
                 </div>
@@ -108,7 +110,8 @@
                                 ...
                             </div>
                             <div class="modal-footer justify-content-center">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn ci-btn rounded-5"
+                                    data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -116,29 +119,108 @@
             </div>
 
             <h2>Training/Workshops/Retreats/Adventures</h2>
-            <div class="row m-5 p-5 bg-dark justify-content-between">
-                <div class="col-lg-3 col-sm-5 p-5 m-2 rounded-4 service-box">
-                    <h3>Service Name</h3>
+            <div class="row m-5 p-5 justify-content-center">
+                <!-- Business/Executive coaching service and modal -->
+                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
+                    data-bs-target="#busines-executive-coaching">
+                    <h3>Business/Executive Coaching</h3>
                 </div>
-                <div class="col-lg-3 col-sm-5 p-5 m-2 rounded-4 service-box">
-                    <h3>Service Name</h3>
+
+                <div class="modal fade" id="busines-executive-coaching" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content rounded-5">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen's Business &
+                                    Executive Coaching</h3>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn ci-btn rounded-5"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div type="button" class="col-lg-3 col-sm-5 p-5 m-2 rounded-4 service-box" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop">
-                    <h3>Service Name</h3>
+
+                <!-- Wellness Coaching service and modal -->
+
+                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
+                    data-bs-target="#wellness-coaching-modal">
+                    <h3>Wellness (Holistic) Coaching</h3>
+                </div>
+
+                <div class="modal fade" id="wellness-coaching-modal" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content rounded-5">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Holistic Wellness
+                                    Coaching</h5>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn ci-btn rounded-5"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support Groups/Communities service and modal -->
+
+                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
+                    data-bs-target="#support-groups-modal">
+                    <h3>Support Groups/Communities</h3>
+                </div>
+
+                <div class="modal fade" id="support-groups-modal" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content rounded-5">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen hosted
+                                    Support Groups/Communities</h5>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn ci-btn rounded-5"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- Button trigger modal -->
-            <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Launch static backdrop modal
-            </a>
         </div>
     </section>
 
 
 
-    <section class="popular-programs-section" id="popular-programs-section"></section>
+    <section class="popular-programs-section text-center" id="popular-programs-section">
+        <h2>Popular programs</h2>
+        <div class="container-fluid">
+            <div class="row bg-primary justify-content-center m-5 p-5">
+                <div class="col-lg-3 p-5 m-2 bg-dark top-programs-box"
+                    style="background-image: url('/src/content/img/upcoming_retreats.jpeg');">
+
+                </div>
+                <div class="col-lg-3 p-5 m-2 bg-dark top-programs-box"
+                    style="background-image: url('/src/content/img/books_of_the_month.jpeg');">
+
+                </div>
+                <div class="col-lg-3 p-5 m-2 bg-dark top-programs-box"
+                    style="background-image: url('/src/content/img/south_africa_health_top_programs.jpeg');">
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div id="footer-div"></div>
 
