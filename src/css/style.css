@@ -16,13 +16,16 @@ body {
 
 .ci-btn:hover {
     border: 2px solid #4AC9E3;
+}
 
+.hero-section {
+    background-image: url('/src/content/img/j&c-hero-image.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 #hero-section #hero-img-container {
-    background-image: url('/src/content/img/j&c-hero-image.jpg');
-    background-size: cover;
-    background-position: center;
     height: 500px;
 }
 
@@ -32,6 +35,10 @@ body {
 
 #hero-section .row .overshadow {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.book-free-session-form {
+    background-color: black;
 }
 
 /* Services Section */
@@ -54,5 +61,5 @@ body {
 /* Top programs */
 
 .top-programs-box {
-    height: 400px;
+    background-color: black;
 }

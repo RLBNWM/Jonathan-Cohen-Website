@@ -10,13 +10,13 @@
 
 <body>
 
-    <div id="nav-bar-div" class="p-5"></div>
+    <div id="nav-bar-div" class="p-0"></div>
 
-    <section class="hero-section p-4" id="hero-section">
-        <div class="container" id="hero-img-container">
-            <div class="row">
-                <div
-                    class="col-lg-5 col-sm-12 overshadow text-lg-start p-5 text-light d-flex flex-column justify-content-between">
+    <section class="hero-section" id="hero-section">
+        <div class="container-fluid" id="hero-img-container" style="height: 100%;">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-5 col-sm-12 overshadow text-center p-5 text-light d-flex flex-column justify-content-between rounded-5"
+                    style="height: 500px;">
                     <h1><b>Unlock your potential. Create the life you deserve.</b></h1>
                     <p>Personalized coaching to help you gain clarity, overcome obstacles, and thrive with purpose.</p>
 
@@ -27,13 +27,57 @@
                 </div>
             </div>
         </div>
+    </section>
 
+    <section class="book-free-session-section" id="book-free-session-section">
         <div class="container">
             <div class="row m-5">
-                <div class="col-12 p-5 bg-dark"></div>
+                <div class="col-12 p-5 text-light rounded-5 book-free-session-form">
+                    <h2 class="text-center mb-4">Book Your Free Trial Session</h2>
+                    <p class="text-center mb-4">Take the first step towards transformation. Schedule your complimentary
+                        coaching session today.</p>
+
+                    <form id="booking-form" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="service" class="form-label">Service Interested In</label>
+                                <select class="form-select" id="service" required>
+                                    <option value="">Choose...</option>
+                                    <option value="business">Business/Executive Coaching</option>
+                                    <option value="wellness">Wellness (Holistic) Coaching</option>
+                                    <option value="support">Support Groups/Communities</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Additional Information</label>
+                                <textarea class="form-control" id="message" rows="3"></textarea>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <button class="btn ci-btn rounded-5 px-5 py-3" type="submit">Book Free Session</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
+
 
 
     <section class="services-section" id="services">
@@ -202,21 +246,50 @@
 
 
 
-    <section class="popular-programs-section text-center" id="popular-programs-section">
-        <h2>Popular programs</h2>
-        <div class="container-fluid">
-            <div class="row bg-primary justify-content-center m-5 p-5">
-                <div class="col-lg-3 p-5 m-2 bg-dark top-programs-box"
-                    style="background-image: url('/src/content/img/upcoming_retreats.jpeg');">
-
+    <section class="popular-programs-section text-center py-5" id="popular-programs-section">
+        <div class="container">
+            <h2 class="mb-5">Featured Programs</h2>
+            <div class="row justify-content-center g-4">
+                <!-- Executive Leadership Program -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="program-card text-light p-4 rounded-5 h-100 top-programs-box">
+                        <div class="program-icon mb-3">
+                            <i class="bi bi-briefcase fs-1"></i>
+                        </div>
+                        <h3>Executive Leadership</h3>
+                        <p class="mb-4">Transform your leadership style and drive organizational success with
+                            personalized executive coaching.</p>
+                        <a href="#services" class="btn ci-btn rounded-5" data-bs-toggle="modal"
+                            data-bs-target="#busines-executive-coaching">Learn More</a>
+                    </div>
                 </div>
-                <div class="col-lg-3 p-5 m-2 bg-dark top-programs-box"
-                    style="background-image: url('/src/content/img/books_of_the_month.jpeg');">
 
+                <!-- Wellness Journey Program -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="program-card text-light p-4 rounded-5 h-100 top-programs-box">
+                        <div class="program-icon mb-3">
+                            <i class="bi bi-heart-pulse fs-1"></i>
+                        </div>
+                        <h3>Holistic Wellness</h3>
+                        <p class="mb-4">Discover balance and well-being through our comprehensive holistic wellness
+                            coaching program.</p>
+                        <a href="#services" class="btn ci-btn rounded-5" data-bs-toggle="modal"
+                            data-bs-target="#wellness-coaching-modal">Learn More</a>
+                    </div>
                 </div>
-                <div class="col-lg-3 p-5 m-2 bg-dark top-programs-box"
-                    style="background-image: url('/src/content/img/south_africa_health_top_programs.jpeg');">
 
+                <!-- Community Support Program -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="program-card text-light p-4 rounded-5 h-100 top-programs-box">
+                        <div class="program-icon mb-3">
+                            <i class="bi bi-people fs-1"></i>
+                        </div>
+                        <h3>Support Community</h3>
+                        <p class="mb-4">Join our nurturing community of like-minded individuals on their journey to
+                            personal growth.</p>
+                        <a href="#services" class="btn ci-btn rounded-5" data-bs-toggle="modal"
+                            data-bs-target="#support-groups-modal">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
