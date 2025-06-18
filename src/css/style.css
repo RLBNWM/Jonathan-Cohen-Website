@@ -9,6 +9,16 @@ body {
     /* font-family: 'Azonix', sans-serif; */
 }
 
+/* Navbar */
+#navbar {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.navbar-faded {
+    opacity: 0;
+}
+
 .ci-btn {
     background-color: #4AC9E3;
     border: 2px solid transparent;

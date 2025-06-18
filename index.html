@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -15,26 +16,54 @@
     <section class="hero-section" id="hero-section">
         <div class="container-fluid" id="hero-img-container" style="height: 100%;">
             <div class="row align-items-center justify-content-center">
-                <div class="col-lg-5 col-sm-12 overshadow text-center p-5 text-light d-flex flex-column justify-content-between rounded-5"
-                    style="height: 500px;">
+                <div class="col-lg-4 col-sm-12 overshadow text-center p-4 text-light d-flex flex-column justify-content-between rounded-5"
+                    style="height: 400px;">
                     <h1><b>Unlock your potential. Create the life you deserve.</b></h1>
-                    <p>Personalized coaching to help you gain clarity, overcome obstacles, and thrive with purpose.</p>
+                    <h5>Personalized coaching to help you gain clarity, overcome obstacles, and thrive with purpose.
+                    </h5>
 
                     <div class="btn-group justify-content-between">
-                        <a class="btn ci-btn rounded-5 p-3 me-5" href="#">My Services</a>
-                        <a class="btn ci-btn rounded-5 p-3" href="#">About Jonathan</a>
+                        <a class="btn ci-btn rounded-5 p-3 me-5" href="#">
+                            <h4>My Services</h4>
+                        </a>
+                        <a class="btn ci-btn rounded-5 p-3" href="#">
+                            <h4>About My Coaching</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action Banner -->
+        <div class="position-absolute bottom-0 start-0 w-100" style="background-color: rgba(0, 0, 0, 0.8);">
+            <div class="container py-3">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-sm-12">
+                        <h4 class="text-light mb-0">Ready to transform your life? Book your free trial session today!
+                        </h4>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 text-end">
+                        <a class="btn ci-btn rounded-5 px-4 py-2" href="#" data-bs-toggle="modal"
+                            data-bs-target="#book-free-session-modal">
+                            <h5 class="mb-0">Book Free Trial</h5>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="book-free-session-section" id="book-free-session-section">
-        <div class="container">
-            <div class="row m-5">
-                <div class="col-12 p-5 text-light rounded-5 book-free-session-form">
-                    <h2 class="text-center mb-4">Book Your Free Trial Session</h2>
-                    <p class="text-center mb-4">Take the first step towards transformation. Schedule your complimentary
+    <!-- Modal for booking free session -->
+    <div class="modal fade" id="book-free-session-modal" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="bookFreeSessionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-5">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="bookFreeSessionModalLabel">Book Your Free Trial Session</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-start mb-4">Take the first step towards transformation. Schedule your complimentary
                         coaching session today.</p>
 
                     <form id="booking-form" class="needs-validation" novalidate>
@@ -68,21 +97,24 @@
                                 <label for="message" class="form-label">Additional Information</label>
                                 <textarea class="form-control" id="message" rows="3"></textarea>
                             </div>
-                            <div class="col-12 text-center mt-4">
-                                <button class="btn ci-btn rounded-5 px-5 py-3" type="submit">Book Free Session</button>
-                            </div>
                         </div>
                     </form>
                 </div>
+                <div class="modal-footer justify-content-center">
+                    <button class="btn ci-btn rounded-5 px-5 py-3" type="submit" form="booking-form">Book Free
+                        Session</button>
+                    <button type="button" class="btn btn-secondary rounded-5 px-5 py-3"
+                        data-bs-dismiss="modal">Cancel</button>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
 
-    <section class="services-section" id="services">
+    <section class="services-section py-5" id="services">
         <div class="container text-center">
-            <h2>Jonathan Cohen's Services</h2>
+            <h2>What I offer</h2>
             <div class="row m-5 p-5 justify-content-center">
                 <!-- Business/Executive coaching service and modal -->
                 <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
@@ -113,7 +145,7 @@
 
                 <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
                     data-bs-target="#wellness-coaching-modal">
-                    <h3>Wellness (Holistic) Coaching</h3>
+                    <h3>Wellness Coaching</h3>
                 </div>
 
                 <div class="modal fade" id="wellness-coaching-modal" data-bs-keyboard="false" tabindex="-1"
@@ -162,7 +194,7 @@
                 </div>
             </div>
 
-            <h2>Training/Workshops/Retreats/Adventures</h2>
+            <h2>Media Resources</h2>
             <div class="row m-5 p-5 justify-content-center">
                 <!-- Business/Executive coaching service and modal -->
                 <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
@@ -296,6 +328,12 @@
     </section>
 
     <div id="footer-div"></div>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            console.log("Scroll event triggered");
+        });
+    </script>
 
     <script src="/src/js/app.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
