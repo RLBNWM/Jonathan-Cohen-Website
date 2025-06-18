@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrollable Carousel</title>
+  <style>
+    /* Container for the carousel */
+    .carousel-container {
+      width: 100%; /* Adjust width of the carousel */
+      overflow-x: scroll; /* Allow horizontal scroll */
+      display: flex;
+      scroll-snap-type: x mandatory; /* Ensure smooth scrolling */
+      gap: 10px; /* Space between boxes */
+    }
+
+    /* Scrollable box items */
+    .carousel-box {
+      width: 150px; /* Set a fixed width for each box */
+      height: 150px; /* Set a fixed height for each box */
+      background-color: #4CAF50; /* Background color for the boxes */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 20px;
+      scroll-snap-align: start; /* Ensure each box snaps to the start when scrolling */
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Hover effect for the boxes */
+    .carousel-box:hover {
+      transform: scale(1.1);
+    }
+
+    /* Optional: Make the carousel container always loop */
+    .carousel-container::-webkit-scrollbar {
+      display: none; /* Hide the scrollbar in WebKit browsers */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Scrollable carousel container -->
+  <div class="carousel-container">
+    <div class="carousel-box">Box 1</div>
+    <div class="carousel-box">Box 2</div>
+    <div class="carousel-box">Box 3</div>
+    <div class="carousel-box">Box 4</div>
+    <div class="carousel-box">Box 5</div>
+    <div class="carousel-box">Box 6</div>
+    <div class="carousel-box">Box 7</div>
+    <div class="carousel-box">Box 8</div>
+    <div class="carousel-box">Box 9</div>
+    <div class="carousel-box">Box 10</div>
+    <div class="carousel-box">Box 11</div>
+    <div class="carousel-box">Box 12</div>
+  </div>
+
+  <script>
+    // Optional JS for looping (reset scroll position to the start)
+    const carouselContainer = document.querySelector('.carousel-container');
+
+    // Event listener for when the user reaches the end of the carousel
+    carouselContainer.addEventListener('scroll', function() {
+      if (carouselContainer.scrollLeft + carouselContainer.clientWidth >= carouselContainer.scrollWidth) {
+        // Loop back to the beginning once the user has reached the end
+        setTimeout(() => {
+          carouselContainer.scrollLeft = 0;
+        }, 200); // Delay before looping back
+      }
+    });
+  </script>
+
+</body>
+</html>
