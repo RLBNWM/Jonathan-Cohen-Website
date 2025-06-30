@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
+
+    <style>
+        .swiper-container {
+          max-width: 1000px;
+          margin: auto;
+        }
+      
+        .swiper-slide {
+          height: 350px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      
+        .service-box {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          text-align: center;
+          background-color: black;
+          border-radius: 15px;
+          padding: 20px;
+        }
+      
+        
+        .swiper-wrapper {
+          gap: 0 !important;
+        }
+      </style>
+      
+
 </head>
 
 <body>
@@ -151,7 +185,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="rounded-4 m-3 p-3 service-box">
+                        <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
+                            data-bs-target="#team-performance-programme">
                             <div class="icon">
                                 <i class="bi bi-ev-front fs-1"></i>
                             </div>
@@ -160,7 +195,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="rounded-4 m-3 p-3 service-box">
+                        <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
+                            data-bs-target="#events-training">
                             <div class="icon">
                                 <i class="bi bi-ev-front fs-1"></i>
                             </div>
@@ -219,7 +255,9 @@
                                 personalized approach, working with you to identify your unique goals and challenges
                                 across all areas of life—physical, emotional, mental, and spiritual.
                             </p>
-                            <ul>
+
+                            <div style="text-align: left; padding-left: 1.5rem;">
+                            <ul style="list-style-position: outside;">
                                 <li><strong>Personalized Wellness Plans:</strong> Each coaching journey begins with a
                                     thorough assessment, allowing Jonathan to tailor strategies and practices that fit
                                     your lifestyle and aspirations.</li>
@@ -233,6 +271,7 @@
                                     guidance keep you on track, celebrating your progress and helping you overcome
                                     obstacles along the way.</li>
                             </ul>
+                        </div>
                             <p>
                                 Whether you're seeking to boost your energy, manage stress, or create a more fulfilling
                                 lifestyle, Jonathan's holistic approach ensures you receive the support and expertise
@@ -256,7 +295,29 @@
                                 Support Groups/Communities</h5>
                         </div>
                         <div class="modal-body">
-                            ...
+                            <p>
+                                Jonathan Cohens Support Groups and Communities provide a safe, nurturing environment 
+                                where individuals can connect, reflect, and grow together. These groups are designed 
+                                to support emotional well-being, personal development, and community empowerment 
+                                through guided conversations and shared experiences.
+                            </p>
+
+                        <div style="text-align: left; padding-left: 1.5rem;">
+                            <ul style="list-style-position: outside;">
+                                <li><strong>Peer Support:</strong>Engage with others who are navigating similar 
+                                    life challenges.</li>
+                                <li><strong>Guided by Experts:</strong>Sessions are facilitated by trained coaches 
+                                    to ensure meaningful, structured dialogue.</li>
+                                <li><strong>Safe Space:</strong>Open, confidential environment where every voice 
+                                    is valued and respected.</li>
+                                <li><strong>Flexible Topics:</strong>Groups focus on wellness, purpose, 
+                                    stress management, and more.</li>  
+                            </ul>
+                        </div>
+                            <p>
+                                Whether you're seeking connection, guidance, or just a space to be heard, 
+                                these communities are here to support your journey.
+                            </p>
                         </div>
                         <div class="modal-footer justify-content-center">
                             <button type="button" class="btn ci-btn rounded-5" data-bs-dismiss="modal">Close</button>
@@ -271,10 +332,28 @@
                     <div class="modal-content rounded-5">
                         <div class="modal-header">
                             <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen hosted
-                                Support Groups/Communities</h5>
+                                Team Performance Programmes</h5>
                         </div>
                         <div class="modal-body">
-                            ...
+                            <p>
+                                Jonathan Cohens Team Performance Programmes are expertly crafted to help 
+                                teams work more cohesively, communicate effectively, and achieve high-impact results. 
+                                These sessions blend leadership coaching, collaboration exercises, and strategy development 
+                                to unlock group potential.
+                            </p>
+
+                        <div style="text-align: left; padding-left: 1.5rem;">
+                            <ul style="list-style-position: outside;">
+                                <li><strong>Customised Coaching:</strong>Tailored to address your teams unique dynamics and goals.</li>
+                                <li><strong>Enhanced Communication:</strong> Learn practical frameworks for improving trust and dialogue.</li>
+                                <li><strong>Leadership Growth:</strong> Empower emerging and existing leaders within your organization.</li>
+                                <li><strong>Action-Oriented:</strong>Interactive sessions that focus on real outcomes, not just theory.</li>
+                            </ul>
+                        </div>
+                            <p>
+                                This is the ideal solution for businesses, startups, and organizations wanting to take team performance 
+                                to the next level.
+                            </p>
                         </div>
                         <div class="modal-footer justify-content-center">
                             <button type="button" class="btn ci-btn rounded-5" data-bs-dismiss="modal">Close</button>
@@ -289,10 +368,26 @@
                     <div class="modal-content rounded-5">
                         <div class="modal-header">
                             <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen hosted
-                                Support Groups/Communities</h5>
+                                Events and Training</h5>
                         </div>
                         <div class="modal-body">
-                            ...
+                            <p>
+                                Jonathan Cohens Events and Training sessions are designed to inspire, educate, and transform. 
+                                Whether you're attending a workshop, corporate training, or a public seminar, each event is built to 
+                                deliver real value and lasting insight.
+                            </p>
+
+                        <div style="text-align: left; padding-left: 1.5rem;">
+                            <ul style="list-style-position: outside;">
+                                <li><strong>Dynamic Workshops:</strong>Topics include leadership, resilience, wellness, and productivity.</li>
+                                <li><strong>Corporate Training:</strong>Equip your team with tools for success in a high-performance environment.</li>
+                                <li><strong>Community Engagement:</strong>Open events designed to uplift, empower, and connect attendees.</li>
+                                <li><strong>Motivational Speaking:</strong>Book Jonathan to deliver powerful keynotes for your next event.</li>
+                            </ul>
+                        </div>
+                            <p>
+                                These events are not just learning opportunities—they're catalysts for meaningful change.
+                            </p>
                         </div>
                         <div class="modal-footer justify-content-center">
                             <button type="button" class="btn ci-btn rounded-5" data-bs-dismiss="modal">Close</button>
@@ -301,78 +396,84 @@
                 </div>
             </div>
 
-            <h2>Media Resources</h2>
+            <h2 class="text-center mt-5">Media Resources</h2>
 
-            <div class="row m-5 p-5 justify-content-center">
-
-                <div class="swiper media-resource-scroller">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
-                                data-bs-target="#gallery-modal">
-                                <div class="icon">
-                                    <i class="bi bi-ev-front fs-1"></i>
-                                </div>
-                                <h3>Gallery</h3>
-                                <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
-                                data-bs-target="#latest-news-modal">
-                                <div class="icon">
-                                    <i class="bi bi-ev-front fs-1"></i>
-                                </div>
-                                <h3>Latest News</h3>
-                                <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
-                                data-bs-target="#giving-back-modal">
-                                <div class="icon">
-                                    <i class="bi bi-ev-front fs-1"></i>
-                                </div>
-                                <h3>Giving Back</h3>
-                                <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
-                                data-bs-target="#partners-modal">
-                                <div class="icon">
-                                    <i class="bi bi-ev-front fs-1"></i>
-                                </div>
-                                <h3>Partners</h3>
-                                <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
-                                data-bs-target="#monthly-tips-modal">
-                                <div class="icon">
-                                    <i class="bi bi-ev-front fs-1"></i>
-                                </div>
-                                <h3>Monthly Tips & Recommedations</h3>
-                                <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
-                            </div>
-                        </div>
+            <div class="swiper media-resource-scroller mt-4">
+              <div class="swiper-wrapper">
+            
+                <div class="swiper-slide">
+                  <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal" data-bs-target="#gallery-modal">
+                    <div class="icon">
+                      <i class="bi bi-ev-front fs-1"></i>
                     </div>
-
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <h3>Gallery</h3>
+                    <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                  </div>
                 </div>
+            
+                <div class="swiper-slide">
+                  <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal" data-bs-target="#latest-news-modal">
+                    <div class="icon">
+                      <i class="bi bi-ev-front fs-1"></i>
+                    </div>
+                    <h3>Latest News</h3>
+                    <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                  </div>
+                </div>
+            
+                <div class="swiper-slide">
+                  <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal" data-bs-target="#giving-back-modal">
+                    <div class="icon">
+                      <i class="bi bi-ev-front fs-1"></i>
+                    </div>
+                    <h3>Giving Back</h3>
+                    <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                  </div>
+                </div>
+            
+                <div class="swiper-slide">
+                  <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal" data-bs-target="#partners-modal">
+                    <div class="icon">
+                      <i class="bi bi-ev-front fs-1"></i>
+                    </div>
+                    <h3>Partners</h3>
+                    <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                  </div>
+                </div>
+            
+                <div class="swiper-slide">
+                  <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal" data-bs-target="#monthly-tips-modal">
+                    <div class="icon">
+                      <i class="bi bi-ev-front fs-1"></i>
+                    </div>
+                    <h3>Monthly Tips & Recommendations</h3>
+                    <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                  </div>
+                </div>
+            
+              </div>
+            
+              <!-- Swiper Navigation -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            
 
                 <div class="modal fade" id="gallery-modal" data-bs-keyboard="false" tabindex="-1"
                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content rounded-5">
                             <div class="modal-header">
-                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen's Business &
-                                    Executive Coaching</h3>
+                                <h3 class="modal-title" id="staticBackdropLabel">More aboutJonathan Cohens Gallery</h3>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <p>
+                                    Explore our vibrant gallery showcasing the transformative journey of our clients and 
+                                    the dynamic energy of our coaching events. From immersive workshops and leadership 
+                                    retreats to wellness sessions and community gatherings, the gallery reflects the growth, 
+                                    authenticity, and purpose that define our coaching experience. Each image tells a story 
+                                    of personal and professional breakthrough, highlighting the power of transformation in action.
+                                </p>
                             </div>
                             <div class="modal-footer justify-content-center">
                                 <button type="button" class="btn ci-btn rounded-5"
@@ -387,11 +488,23 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content rounded-5">
                             <div class="modal-header">
-                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Holistic Wellness
-                                    Coaching</h5>
+                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohens Latest News</h3>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <p>
+                                    Stay updated with the latest news, insights, and events from Jonathan Cohen. 
+                                    From personal development tips to industry trends, our blog provides valuable 
+                                    information to help you grow and thrive.
+                                </p>
+
+                            <div style="text-align: left; padding-left: 1.5rem;">
+                                <ul style="list-style-position: outside;">
+                                    <li><strong>Personal Development:</strong>Articles on mindset, productivity, and self-improvement.</li>
+                                    <li><strong>Industry Insights:</strong>Expert analysis of trends in leadership, wellness, and business.</li>
+                                    <li><strong>Events & Workshops:</strong>Upcoming events and training opportunities.</li>
+                                    <li><strong>Success Stories:</strong>Real-life examples of how our clients have transformed their lives.</li>
+                                </ul>
+                            </div>
                             </div>
                             <div class="modal-footer justify-content-center">
                                 <button type="button" class="btn ci-btn rounded-5"
@@ -406,11 +519,25 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content rounded-5">
                             <div class="modal-header">
-                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen hosted
-                                    Support Groups/Communities</h5>
+                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohens Giving Back</h3>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <p>
+                                    Jonathan Cohen is committed to giving back to the community, supporting local 
+                                    charities, and promoting social impact. Through partnerships, donations, and volunteer 
+                                    opportunities, we aim to make a positive difference in the lives of those around us.
+                                </p>
+
+                            <div style="text-align: left; padding-left: 1.5rem;">
+                                <ul style="list-style-position: outside;">
+                                    <li><strong>Charity Donations:</strong>Regular contributions to local and international charities.</li>
+                                    <li><strong>Volunteer Programs:</strong>Opportunities for our clients to give back to the community.</li>
+                                    <li><strong>Community Impact:</strong>Projects designed to uplift, empower, and connect individuals.</li>
+                                </ul>
+                            </div>
+                                <p>
+                                    Our commitment to giving back is a reflection of our values and our dedication to making a positive difference.
+                                </p>
                             </div>
                             <div class="modal-footer justify-content-center">
                                 <button type="button" class="btn ci-btn rounded-5"
@@ -425,11 +552,25 @@
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content rounded-5">
                             <div class="modal-header">
-                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen hosted
-                                    Support Groups/Communities</h5>
+                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohens Partners</h3>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <p>
+                                    Jonathan Cohen partners with leading organizations to deliver impactful programs 
+                                    and initiatives. Our collaborations focus on leadership development, community 
+                                    engagement, and sustainable impact.
+                                </p>
+
+                            <div style="text-align: left; padding-left: 1.5rem;">
+                                <ul style="list-style-position: outside;">
+                                    <li><strong>Leadership Development:</strong>Collaborations with industry leaders to enhance leadership skills.</li>
+                                    <li><strong>Community Engagement:</strong>Partnerships with local charities to support social impact.</li>
+                                    <li><strong>Sustainable Impact:</strong>Programs designed to create lasting change in the community.</li>
+                                </ul>
+                            </div>
+                                <p>
+                                    These partnerships are the foundation of our commitment to making a positive difference.
+                                </p>
                             </div>
                             <div class="modal-footer justify-content-center">
                                 <button type="button" class="btn ci-btn rounded-5"
@@ -439,16 +580,31 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="monthly-tips-modal   " data-bs-keyboard="false" tabindex="-1"
+                <div class="modal fade" id="monthly-tips-modal" data-bs-keyboard="false" tabindex="-1"
                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content rounded-5">
                             <div class="modal-header">
-                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen hosted
-                                    Support Groups/Communities</h5>
+                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohens Monthly Tips & Recommendations</h3>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <p>
+                                    Jonathan Cohen offers monthly tips and recommendations to help you stay on track 
+                                    with your goals and maintain a healthy, balanced lifestyle. These insights are designed 
+                                    to inspire, motivate, and provide practical strategies for success.
+                                </p>
+
+                            <div style="text-align: left; padding-left: 1.5rem;">
+                                <ul style="list-style-position: outside;">
+                                    <li><strong>Mind-Body Integration:</strong>Learn techniques to manage stress, improve resilience, and cultivate mindfulness.</li>
+                                    <li><strong>Holistic Support:</strong>Jonathan addresses nutrition, movement, sleep, and emotional health, providing practical tools and ongoing encouragement to help you make sustainable changes.</li>
+                                    <li><strong>Accountability & Motivation:</strong>Regular check-ins and compassionate guidance keep you on track, celebrating your progress and helping you overcome obstacles along the way.</li>
+                                </ul>
+                            </div>
+
+                                <p>
+                                    Whether you're seeking to boost your energy, manage stress, or create a more fulfilling lifestyle, Jonathan's holistic approach ensures you receive the support and expertise needed to achieve lasting wellness.
+                                </p>
                             </div>
                             <div class="modal-footer justify-content-center">
                                 <button type="button" class="btn ci-btn rounded-5"
@@ -524,6 +680,7 @@
             slidesPerView: 3,
             spaceBetween: 20,
             loop: true,
+           
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true
@@ -543,6 +700,7 @@
             slidesPerView: 3,
             spaceBetween: 20,
             loop: true,
+            
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true
