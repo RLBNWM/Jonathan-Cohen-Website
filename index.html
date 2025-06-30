@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
 </head>
 
@@ -24,14 +25,15 @@
 
                     <div class="btn-group justify-content-between">
                         <a class="btn ci-btn rounded-5 p-3 me-5" href="#">
-                            <h4>My Services</h4>
+                            <h5>My Services</h5>
                         </a>
                         <a class="btn ci-btn rounded-5 p-3" href="#">
-                            <h4>About My Coaching</h4>
+                            <h5>About My Coaching</h5>
                         </a>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!-- Call to Action Banner -->
@@ -115,94 +117,253 @@
     <section class="services-section py-5" id="services">
         <div class="container text-center">
             <h2>What I offer</h2>
-            <div class="row m-5 p-5 justify-content-center">
-                <!-- Business/Executive coaching service and modal -->
-                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
-                    data-bs-target="#busines-executive-coaching">
-                    <h3>Business/Executive Coaching</h3>
-                </div>
 
-                <div class="modal fade" id="busines-executive-coaching" data-bs-keyboard="false" tabindex="-1"
-                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content rounded-5">
-                            <div class="modal-header">
-                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen's Business &
-                                    Executive Coaching</h3>
+            <div class="swiper services-section-scroller">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
+                            data-bs-target="#busines-executive-coaching">
+                            <div class="icon">
+                                <i class="bi bi-ev-front fs-1"></i>
                             </div>
-                            <div class="modal-body">
-                                ...
+                            <h3>Business/Executive Coaching</h3>
+                            <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
+                            data-bs-target="#wellness-coaching-modal">
+                            <div class="icon">
+                                <i class="bi bi-ev-front fs-1"></i>
                             </div>
-                            <div class="modal-footer justify-content-center">
-                                <button type="button" class="btn ci-btn rounded-5"
-                                    data-bs-dismiss="modal">Close</button>
+                            <h3>Wellness Coaching</h3>
+                            <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
+                            data-bs-target="#support-groups-modal">
+                            <div class="icon">
+                                <i class="bi bi-ev-front fs-1"></i>
                             </div>
+                            <h3>Support Groups/Communities</h3>
+                            <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rounded-4 m-3 p-3 service-box">
+                            <div class="icon">
+                                <i class="bi bi-ev-front fs-1"></i>
+                            </div>
+                            <h3>Team Performance Programmes</h3>
+                            <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="rounded-4 m-3 p-3 service-box">
+                            <div class="icon">
+                                <i class="bi bi-ev-front fs-1"></i>
+                            </div>
+                            <h3>Events/Training</h3>
+                            <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Wellness Coaching service and modal -->
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
 
-                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
-                    data-bs-target="#wellness-coaching-modal">
-                    <h3>Wellness Coaching</h3>
-                </div>
+            </div>
 
-                <div class="modal fade" id="wellness-coaching-modal" data-bs-keyboard="false" tabindex="-1"
-                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content rounded-5">
-                            <div class="modal-header">
-                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Holistic Wellness
-                                    Coaching</h5>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer justify-content-center">
-                                <button type="button" class="btn ci-btn rounded-5"
-                                    data-bs-dismiss="modal">Close</button>
-                            </div>
+            <!-- Business/Executive coaching service and modal -->
+            <div class="modal fade" id="busines-executive-coaching" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-5">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen's Business &
+                                Executive Coaching</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Jonathan Cohen's Business & Executive Coaching is designed for leaders,
+                                entrepreneurs, and professionals seeking to elevate their performance and drive
+                                meaningful results. With a focus on strategic growth, leadership development, and
+                                personal effectiveness, Jonathan partners with clients to unlock their full
+                                potential, navigate complex challenges, and achieve their business goals. Sessions
+                                are tailored to individual or team needs, blending proven methodologies with
+                                practical insights to foster sustainable success and impactful leadership.
+                            </p>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn ci-btn rounded-5" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Support Groups/Communities service and modal -->
-
-                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
-                    data-bs-target="#support-groups-modal">
-                    <h3>Support Groups/Communities</h3>
+            <!-- Wellness Coaching service and modal -->
+            <div class="modal fade" id="wellness-coaching-modal" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-5">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Holistic Wellness
+                                Coaching</h5>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Jonathan's Holistic Wellness Coaching is a comprehensive program designed to support
+                                your journey toward greater balance, vitality, and well-being. Jonathan takes a
+                                personalized approach, working with you to identify your unique goals and challenges
+                                across all areas of life—physical, emotional, mental, and spiritual.
+                            </p>
+                            <ul>
+                                <li><strong>Personalized Wellness Plans:</strong> Each coaching journey begins with a
+                                    thorough assessment, allowing Jonathan to tailor strategies and practices that fit
+                                    your lifestyle and aspirations.</li>
+                                <li><strong>Mind-Body Integration:</strong> Learn techniques to manage stress, improve
+                                    resilience, and cultivate mindfulness, empowering you to thrive in both your
+                                    personal and professional life.</li>
+                                <li><strong>Holistic Support:</strong> Jonathan addresses nutrition, movement, sleep,
+                                    and emotional health, providing practical tools and ongoing encouragement to help
+                                    you make sustainable changes.</li>
+                                <li><strong>Accountability & Motivation:</strong> Regular check-ins and compassionate
+                                    guidance keep you on track, celebrating your progress and helping you overcome
+                                    obstacles along the way.</li>
+                            </ul>
+                            <p>
+                                Whether you're seeking to boost your energy, manage stress, or create a more fulfilling
+                                lifestyle, Jonathan's holistic approach ensures you receive the support and expertise
+                                needed to achieve lasting wellness.
+                            </p>
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn ci-btn rounded-5" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="modal fade" id="support-groups-modal" data-bs-keyboard="false" tabindex="-1"
-                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content rounded-5">
-                            <div class="modal-header">
-                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen hosted
-                                    Support Groups/Communities</h5>
-                            </div>
-                            <div class="modal-body">
-                                ...
-                            </div>
-                            <div class="modal-footer justify-content-center">
-                                <button type="button" class="btn ci-btn rounded-5"
-                                    data-bs-dismiss="modal">Close</button>
-                            </div>
+            <!-- Support Groups/Communities service and modal -->
+            <div class="modal fade" id="support-groups-modal" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-5">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen hosted
+                                Support Groups/Communities</h5>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn ci-btn rounded-5" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="team-performance-programme" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-5">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen hosted
+                                Support Groups/Communities</h5>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn ci-btn rounded-5" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="events-training" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content rounded-5">
+                        <div class="modal-header">
+                            <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen hosted
+                                Support Groups/Communities</h5>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn ci-btn rounded-5" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
 
             <h2>Media Resources</h2>
+
             <div class="row m-5 p-5 justify-content-center">
-                <!-- Business/Executive coaching service and modal -->
-                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
-                    data-bs-target="#busines-executive-coaching">
-                    <h3>Business/Executive Coaching</h3>
+
+                <div class="swiper media-resource-scroller">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
+                                data-bs-target="#gallery-modal">
+                                <div class="icon">
+                                    <i class="bi bi-ev-front fs-1"></i>
+                                </div>
+                                <h3>Gallery</h3>
+                                <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
+                                data-bs-target="#latest-news-modal">
+                                <div class="icon">
+                                    <i class="bi bi-ev-front fs-1"></i>
+                                </div>
+                                <h3>Latest News</h3>
+                                <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
+                                data-bs-target="#giving-back-modal">
+                                <div class="icon">
+                                    <i class="bi bi-ev-front fs-1"></i>
+                                </div>
+                                <h3>Giving Back</h3>
+                                <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
+                                data-bs-target="#partners-modal">
+                                <div class="icon">
+                                    <i class="bi bi-ev-front fs-1"></i>
+                                </div>
+                                <h3>Partners</h3>
+                                <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div type="button" class="rounded-4 m-3 p-3 service-box" data-bs-toggle="modal"
+                                data-bs-target="#monthly-tips-modal">
+                                <div class="icon">
+                                    <i class="bi bi-ev-front fs-1"></i>
+                                </div>
+                                <h3>Monthly Tips & Recommedations</h3>
+                                <div class="btn ci-btn rounded-5 mt-2 p-2">Learn More</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
 
-                <div class="modal fade" id="busines-executive-coaching" data-bs-keyboard="false" tabindex="-1"
+                <div class="modal fade" id="gallery-modal" data-bs-keyboard="false" tabindex="-1"
                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content rounded-5">
@@ -221,14 +382,7 @@
                     </div>
                 </div>
 
-                <!-- Wellness Coaching service and modal -->
-
-                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
-                    data-bs-target="#wellness-coaching-modal">
-                    <h3>Wellness (Holistic) Coaching</h3>
-                </div>
-
-                <div class="modal fade" id="wellness-coaching-modal" data-bs-keyboard="false" tabindex="-1"
+                <div class="modal fade" id="latest-news-modal" data-bs-keyboard="false" tabindex="-1"
                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content rounded-5">
@@ -247,14 +401,7 @@
                     </div>
                 </div>
 
-                <!-- Support Groups/Communities service and modal -->
-
-                <div type="button" class="col-lg-3 col-sm-5 p-5 mx-4 rounded-5 service-box" data-bs-toggle="modal"
-                    data-bs-target="#support-groups-modal">
-                    <h3>Support Groups/Communities</h3>
-                </div>
-
-                <div class="modal fade" id="support-groups-modal" data-bs-keyboard="false" tabindex="-1"
+                <div class="modal fade" id="giving-back-modal" data-bs-keyboard="false" tabindex="-1"
                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content rounded-5">
@@ -272,6 +419,45 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="modal fade" id="partners-modal" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content rounded-5">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen hosted
+                                    Support Groups/Communities</h5>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn ci-btn rounded-5"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="monthly-tips-modal" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content rounded-5">
+                            <div class="modal-header">
+                                <h3 class="modal-title" id="staticBackdropLabel">More about Jonathan Cohen hosted
+                                    Support Groups/Communities</h5>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn ci-btn rounded-5"
+                                    data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -329,14 +515,10 @@
 
     <div id="footer-div"></div>
 
-    <script>
-        window.addEventListener('scroll', function () {
-            console.log("Scroll event triggered");
-        });
-    </script>
-
     <script src="/src/js/app.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>
