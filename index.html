@@ -439,7 +439,7 @@
                     </div>
                 </div>
 
-                <div class="modal fade" id="monthly-tips-modal" data-bs-keyboard="false" tabindex="-1"
+                <div class="modal fade" id="monthly-tips-modal   " data-bs-keyboard="false" tabindex="-1"
                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content rounded-5">
@@ -518,6 +518,47 @@
     <script src="/src/js/app.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var service_swiper = new Swiper(".services-section-scroller", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                992: { slidesPerView: 3 },
+                768: { slidesPerView: 2 },
+                576: { slidesPerView: 1 }
+            }
+        });
+
+        var media_swiper = new Swiper(".media-resource-scroller", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                992: { slidesPerView: 3 },
+                768: { slidesPerView: 2 },
+                576: { slidesPerView: 1 }
+            }
+        })
+
+    </script>
 
 </body>
 
