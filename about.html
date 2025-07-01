@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>About Jonathan Cohen</title>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .about-page main {
+      flex: 1;
+      padding: 60px 20px 100px 20px;
+    }
+
+    .about-page h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .about-page p {
+      font-size: 1.35rem;
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    .about-icon {
+      color: #00bcd4;
+      font-size: 2.5rem;
+      margin-right: 15px;
+    }
+
+    .about-highlight {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .about-page footer {
+      background-color: #000;
+      color: white;
+      padding: 20px;
+      font-size: 1rem;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .about-page footer h3,
+    .about-page footer h5,
+    .about-page footer li,
+    .about-page footer a {
+      color: white;
+      font-size: 1.15rem;
+      line-height: 1.6;
+      text-decoration: none;
+    }
+
+    .about-page footer ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .about-page footer ul li {
+      margin-bottom: 10px;
+    }
+
+    .about-page footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body class="about-page">
+  <div id="nav-bar-div"></div>
+
+  <main class="container">
+    <h1 class="text-center">About Jonathan Cohen</h1>
+
+    <div class="about-highlight">
+      <i class="fas fa-brain about-icon"></i>
+      <p>Jonathan Cohen is a passionate and visionary holistic coach
+         dedicated to helping individuals unlock their full potential.
+          With over 15 years of experience in personal development, 
+          leadership training, and emotional well-being, Jonathan has 
+          become a respected figure in the wellness and coaching industry.</p>
+    </div>
+
+    <div class="about-highlight">
+      <i class="fas fa-leaf about-icon"></i>
+      <p>His unique coaching style blends psychology, mindfulness, and 
+        strategic planning to empower clients with actionable tools for long-term 
+        transformation. Jonathan holds certifications in executive coaching, NLP 
+        (Neuro-Linguistic Programming), and integrative wellness practices.</p>
+    </div>
+
+    <div class="about-highlight">
+      <i class="fas fa-heart about-icon"></i>
+      <p>As the founder of Jonathan Cohen Holistic Coaching, his mission is to 
+        foster a supportive space where individuals can explore their purpose, 
+        overcome personal barriers, and live with intention.</p>
+    </div>
+
+    <div class="about-highlight">
+      <i class="fas fa-microphone about-icon"></i>
+      <p>Outside of coaching, Jonathan is an avid writer, speaker, and advocate 
+        for mental health awareness. His workshops and talks have inspired 
+        thousands across South Africa and beyond.</p>
+    </div>
+  </main>
+
+  <div id="footer-div"></div>
+
+  <script src="/src/js/app.js"></script>
+
+  <script>
+    // Delay execution until after navbar is loaded by app.js
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        if (window.location.pathname.includes("about.html")) {
+          const navLinks = document.querySelectorAll(".navbar-nav .nav-item");
+  
+          navLinks.forEach((item) => {
+            const text = item.textContent.trim();
+            if (text === "Services" || text === "Contact Us") {
+              item.style.display = "none";
+            }
+          });
+        }
+      }, 100); // Adjust delay if needed
+    });
+  </script>
+  
+</body>
+
+</html>
