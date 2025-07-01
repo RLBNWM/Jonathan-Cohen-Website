@@ -29,7 +29,7 @@ body {
 }
 
 .hero-section {
-    background-image: url('/src/content/img/background-hero-img.jpg');
+    background-image: url('https://rlbnwm.github.io/Jonathan-Cohen-Website/src/content/img/background-hero-img.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
