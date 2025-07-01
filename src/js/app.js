@@ -1,6 +1,6 @@
 
 
-fetch("/navbar.html")
+fetch("https://rlbnwm.github.io/Jonathan-Cohen-Website/navbar.html")
     .then(result => {
         return result.text();
 
@@ -11,7 +11,7 @@ fetch("/navbar.html")
         console.log(error);
     });
 
-fetch('/footer.html')
+fetch('https://rlbnwm.github.io/Jonathan-Cohen-Website/footer.html')
     .then(result => {
         return result.text();
     })
