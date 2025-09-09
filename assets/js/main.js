@@ -6,16 +6,16 @@
 * License: https://bootstrapmade.com/license/
 */
 
-fetch("header.html")
-  .then((result) => {
-    return result.text();
-  })
-  .then((html) => {
-    document.getElementById("header").innerHTML = html;
-  })
-  .catch((err) => {
-    console.log(err)
-  });
+// fetch("header.html")
+//   .then((result) => {
+//     return result.text();
+//   })
+//   .then((html) => {
+//     document.getElementById("header").innerHTML = html;
+//   })
+//   .catch((err) => {
+//     console.log(err)
+//   });
 
 fetch("footer.html")
   .then((result) => {
