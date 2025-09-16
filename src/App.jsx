@@ -12,6 +12,8 @@ import Services from "./components/Services";
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import Contact from "./components/Contact";
+import { Route, Routes } from "react-router-dom";
+import ServiceInfo from "./components/ServiceInfo";
 
 function App() {
 
@@ -22,44 +24,49 @@ function App() {
     });
   }, []);
 
-  let pages = ["Home", "About", "Services", "Contact"];
+  let pages = [{ name: "Home", route: "/" }, { name: "About", route: "/about" }, { name: "Services", route: "/services" }, { name: "Contact", route: "/contact" }];
   let services = [{
     img: "assets/img/gallery/gallery-1.jpg",
     title: "Business/Executive/Entrepreneur Coaching or Mentorship",
     description: "Helping business leaders and entrepreneurs achieve their goals through personalized coaching and mentorship.",
-    icon: "bi bi-activity"
+    icon: "bi bi-activity",
+    slug: "business-exec-coaching"
   },
   {
     img: "assets/img/gallery/gallery-2.jpg",
     title: "Individual/PersonalCoaching or Counselling",
     description: "Providing one-on-one coaching and counselling to support personal growth and development.",
-    icon: "bi bi-bounding-box-circles"
+    icon: "bi bi-bounding-box-circles",
+    slug: "individual-coaching"
   },
   {
     img: "assets/img/gallery/gallery-3.jpg",
     title: "Team Coaching",
     description: "Facilitating team coaching sessions to enhance collaboration, communication, and performance.",
-    icon: "bi bi-calendar4-week"
+    icon: "bi bi-calendar4-week",
+    slug: "team-coaching"
   },
   {
     img: "assets/img/gallery/gallery-4.jpg",
     title: "Support Groups",
     description: "Leading support groups to provide a safe and supportive environment for individuals to share their experiences and challenges.",
-    icon: "bi bi-broadcast"
+    icon: "bi bi-broadcast",
+    slug: "support-groups"
   },
   {
     img: "assets/img/gallery/gallery-5.jpg",
     title: "Corporate Wellness Consulting",
     description: "Offering corporate wellness consulting services to promote employee health and well-being.",
-    icon: "bi bi-brightness-high"
+    icon: "bi bi-brightness-high",
+    slug: "corporate-wellness"
   },
   {
     img: "assets/img/gallery/gallery-6.jpg",
     title: "Talks/Key Notes",
     description: "Delivering engaging talks and keynotes on topics related to personal and professional development.",
-    icon: "bi bi-chat-square-text"
-  }
-  ];
+    icon: "bi bi-chat-square-text",
+    slug: "talks-key-notes"
+  }];
 
   // const [currentPage, setCurrentPage] = useState(pages[0]);
   const [selectedTab, setSelectedTab] = useState(0);
@@ -68,12 +75,20 @@ function App() {
 
   return (
     <>
-      <Navbar items={pages} setSelectedTab={setSelectedTab} selectedTab={selectedTab}></Navbar>
+      <Navbar pages={pages} setSelectedTab={setSelectedTab} selectedTab={selectedTab}></Navbar>
 
-      {selectedTab == 0 && <HomePage services={services} />}
-      {selectedTab == 1 && <About />}
-      {selectedTab == 2 && <Services services={services}></Services>}
-      {selectedTab == 3 && <Contact></Contact>}
+      <Routes>
+        <Route path="/" element={<HomePage services={services} />} />
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/services" element={<Services services={services} />}></Route>
+        <Route path="/services/:slug" element={<ServiceInfo services={services} />} />
+        <Route path="/contact" element={<Contact />}></Route>
+      </Routes>
+
+      {/* {selectedTab == 0 && <HomePage services={services} />} */}
+      {/* {selectedTab == 1 && <About />} */}
+      {/* {selectedTab == 2 && <Services services={services}></Services>}
+      {selectedTab == 3 && <Contact></Contact>} */}
 
       {/* <Preloader></Preloader> */}
 

@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { Link } from "react-router-dom";
 
 const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
@@ -8,7 +9,7 @@ function mobileNavToogle() {
     mobileNavToggleBtn.classList.toggle('bi-x');
 }
 
-function Navbar({ items, setSelectedTab, selectedTab }) {
+function Navbar({ pages, setSelectedTab, selectedTab }) {
     useEffect(() => {
 
 
@@ -52,11 +53,26 @@ function Navbar({ items, setSelectedTab, selectedTab }) {
 
                 <nav id="navmenu" className="navmenu">
                     <ul>
-                        {items.map((item, index) => {
-                            return <li><a key={index} href="" className={displayActive(index)} onClick={(e) => {
-                                e.preventDefault();
-                                setSelectedTab(index);
-                            }}>{item}</a></li>
+                        {/* <li>
+                            <Link to="/">Router Home</Link>
+                            <Link to="/about">Router About</Link>
+                        </li> */}
+                        {pages.map(({ name, route }, index) => {
+
+                            return (
+                                <li>
+                                    {/* <a href="" > */}
+                                    <Link to={route} key={index} className={displayActive(index)} onClick={(e) => {
+                                        setSelectedTab(index);
+                                    }}>{name}</Link>
+                                    {/* </a> */}
+                                </li>
+                            )
+
+                            // return (<li><a key={index} href="" className={displayActive(index)} onClick={(e) => {
+                            //     e.preventDefault();
+                            //     setSelectedTab(index);
+                            // }}>{item}</a></li>)
                         })}
                         <li className="dropdown"><a href="gallery.html"><span>Resources</span> <i
                             className="bi bi-chevron-down toggle-dropdown"></i></a>

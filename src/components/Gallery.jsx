@@ -3,7 +3,7 @@ function Gallery({ services }) {
 
     return (
         <section id="gallery" className="gallery section">
-            <div className="container-fluid">
+            <div className="container-fluid" data-aos="fade-up" data-aos-delay="100">
                 <div className="row gy-4 justify-content-center">
                     {services.map((service, index) => {
                         return (
