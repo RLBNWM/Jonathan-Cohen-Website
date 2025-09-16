@@ -1,5 +1,6 @@
 import React from 'react'
 import Preloader from './Preloader'
+import Breadcrumb from './Breadcrumb'
 
 const Contact = () => {
     return (
@@ -17,14 +18,10 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <nav className="breadcrumbs">
-                    <div className="container">
-                        <ol>
-                            <li><a href="index.html">Home</a></li>
-                            <li className="current">Contact</li>
-                        </ol>
-                    </div>
-                </nav>
+                <Breadcrumb crumbs={[
+                    { route: "/", page: "Home" },
+                    { route: "/contact", page: "Contact Jonathan" }
+                ]} />
             </div>
             <section id="contact" className="contact section">
 

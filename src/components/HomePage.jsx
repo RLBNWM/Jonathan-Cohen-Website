@@ -1,6 +1,7 @@
 import Testimonials from "./Testimonials"
 import Gallery from "./Gallery"
 import Preloader from "./Preloader"
+import { Link } from "react-router-dom"
 // import { useEffect } from "react"
 
 function HomePage({ services }) {
@@ -16,10 +17,10 @@ function HomePage({ services }) {
                                 <h2>
                                     <span>I'm </span><span className="underlight">Jonathan Cohen</span>, an Experienced
                                     <span className="underlight">Coach, Mentor,</span>
-                                    <span className="underlight">Entrepreneur and Counsellor</span>
+                                    <span className="underlight">Entrepreneur</span> and <span className="underlight">Counsellor</span>
                                 </h2>
                                 <p>My Passion and Purpose is to support and Help People, Communities, and Society Heal and Thrive</p>
-                                <a href="contact.html" className="btn-get-started">Book a free chemistry session<br /></a>
+                                <Link to="/contact" className="btn-get-started">Book a free chemistry session<br /></Link>
                             </div>
                         </div>
                     </div>

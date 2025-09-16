@@ -5,10 +5,15 @@ const Preloader = () => {
     useEffect(() => {
         const preloader = document.querySelector('#preloader');
         setTimeout(() => {
-            preloader.classList.add('loaded');
+            if (preloader) {
+                preloader.classList.add('loaded');
+            }
+
         }, 1000);
         setTimeout(() => {
-            preloader.remove();
+            if (preloader) {
+                preloader.remove();
+            }
         }, 2000);
     });
 

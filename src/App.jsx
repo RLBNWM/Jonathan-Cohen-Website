@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import HomePage from "./components/HomePage"
 import Navbar from "./components/Navbar"
 import About from "./components/About";
-import Preloader from "./components/Preloader";
 import { useEffect, useState } from "react";
 import Services from "./components/Services";
 import AOS from "aos";
@@ -14,6 +13,13 @@ import 'aos/dist/aos.css';
 import Contact from "./components/Contact";
 import { Route, Routes } from "react-router-dom";
 import ServiceInfo from "./components/ServiceInfo";
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
 
 function App() {
 
@@ -67,11 +73,32 @@ function App() {
     icon: "bi bi-chat-square-text",
     slug: "talks-key-notes"
   }];
-
-  // const [currentPage, setCurrentPage] = useState(pages[0]);
   const [selectedTab, setSelectedTab] = useState(0);
 
+  useEffect(() => {
+    if (window.scrollY > 50) {
+      setTimeout(() => {
+        scrollToTop();
+      }, 500);
+    }
+  });
 
+  let scrollTop = document.querySelector('.scroll-top');
+
+  function toggleScrollTop() {
+    if (scrollTop) {
+      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+    }
+  }
+
+  // window.addEventListener('load', () => {
+  //   if (window.scrollY > 100) {
+  //     scrollToTop();
+  //   }
+  //   toggleScrollTop
+  // });
+
+  document.addEventListener('scroll', toggleScrollTop);
 
   return (
     <>
@@ -85,12 +112,8 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
       </Routes>
 
-      {/* {selectedTab == 0 && <HomePage services={services} />} */}
-      {/* {selectedTab == 1 && <About />} */}
-      {/* {selectedTab == 2 && <Services services={services}></Services>}
-      {selectedTab == 3 && <Contact></Contact>} */}
-
-      {/* <Preloader></Preloader> */}
+      <a href="#" onClick={scrollToTop} id="scroll-top" className="scroll-top d-flex align-items-center justify-content-center"><i
+        className="bi bi-arrow-up-short"></i></a>
 
       <Footer></Footer>
     </>

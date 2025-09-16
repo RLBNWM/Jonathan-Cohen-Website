@@ -1,16 +1,11 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+import Breadcrumb from './Breadcrumb';
 
 const ServiceInfo = ({ services }) => {
 
-    const slug = useParams();
-    const service = services.find((s) => { s.slug === slug })
-
-    console.log(service);
-
-
-
-    // service = { title: "Test Data", description: "Test Description" }
+    const slug = useParams().slug;
+    const service = services.find((service) => slug === service.slug);
 
     return (
         <main className="main">
@@ -26,14 +21,12 @@ const ServiceInfo = ({ services }) => {
                         </div>
                     </div>
                 </div>
-                <nav className="breadcrumbs">
-                    <div className="container">
-                        <ol>
-                            <li><a href="index.html">Home</a></li>
-                            <li className="current">Gallery Single</li>
-                        </ol>
-                    </div>
-                </nav>
+
+                <Breadcrumb crumbs={[
+                    { route: "/", page: "Home" },
+                    { route: "/services", page: "Services" },
+                    { route: `/${slug}`, page: service.title }
+                ]} />
             </div>
 
             <section id="gallery-details" className="gallery-details section">

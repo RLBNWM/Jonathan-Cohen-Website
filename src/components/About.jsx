@@ -1,3 +1,4 @@
+import Breadcrumb from "./Breadcrumb";
 import Preloader from "./Preloader";
 
 export default function About() {
@@ -23,16 +24,11 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <nav className="breadcrumbs">
-                    <div className="container">
-                        <ol>
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li className="current">About</li>
-                        </ol>
-                    </div>
-                </nav>
+                <Breadcrumb crumbs={[
+                    { route: "/", page: "Home" },
+                    { route: "/about", page: "About" }
+                ]}
+                />
             </div>
 
             <section id="about" className="about section">
@@ -121,6 +117,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
+
             <Preloader></Preloader>
         </main>
     );

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Preloader from './Preloader';
+import Breadcrumb from './Breadcrumb';
 
 const Services = ({ services }) => {
 
@@ -18,14 +19,10 @@ const Services = ({ services }) => {
                         </div>
                     </div>
                 </div>
-                <nav className="breadcrumbs">
-                    <div className="container">
-                        <ol>
-                            <li><a href="index.html">Home</a></li>
-                            <li className="current">Services</li>
-                        </ol>
-                    </div>
-                </nav>
+                <Breadcrumb crumbs={[
+                    { route: "/", page: "Home" },
+                    { route: "/services", page: "Services" }
+                ]} />
             </div>
 
             <section id="services" className="services section">
@@ -55,7 +52,7 @@ const Services = ({ services }) => {
                 </div>
 
             </section>
-            {/* <Preloader></Preloader> */}
+            <Preloader />
         </main>
     )
 }

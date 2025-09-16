@@ -46,17 +46,13 @@ function Navbar({ pages, setSelectedTab, selectedTab }) {
         <header id="header" className="header d-flex align-items-center sticky-top">
             <div className="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-                <a href="index.html" className="logo d-flex align-items-center me-auto me-xl-0">
+                <Link to="/" onClick={() => { setSelectedTab(0) }} className="logo d-flex align-items-center me-auto me-xl-0">
                     <img style={{ borderRadius: "50%" }} src='/assets/img/logo.png' />
                     <h1 className="sitename">Jonathan Cohen</h1>
-                </a>
+                </Link>
 
                 <nav id="navmenu" className="navmenu">
                     <ul>
-                        {/* <li>
-                            <Link to="/">Router Home</Link>
-                            <Link to="/about">Router About</Link>
-                        </li> */}
                         {pages.map(({ name, route }, index) => {
 
                             return (
@@ -68,19 +64,15 @@ function Navbar({ pages, setSelectedTab, selectedTab }) {
                                     {/* </a> */}
                                 </li>
                             )
-
-                            // return (<li><a key={index} href="" className={displayActive(index)} onClick={(e) => {
-                            //     e.preventDefault();
-                            //     setSelectedTab(index);
-                            // }}>{item}</a></li>)
                         })}
-                        <li className="dropdown"><a href="gallery.html"><span>Resources</span> <i
-                            className="bi bi-chevron-down toggle-dropdown"></i></a>
+
+                        <li className="dropdown"><Link to="/resources"><span>Resources</span> <i
+                            className="bi bi-chevron-down toggle-dropdown"></i></Link>
                             <ul>
-                                <li><a href="gallery.html">Past Podcast Episodes</a></li>
-                                <li><a href="gallery.html">Past Events/Talks</a></li>
-                                <li><a href="gallery.html">Past Workshops</a></li>
-                                <li><a href="gallery.html">Book Recommendations</a></li>
+                                <li><Link to="/resources/?">Past Podcast Episodes</Link></li>
+                                <li><Link to="/resources/?">Past Events/Talks</Link></li>
+                                <li><Link to="/resources/?">Past Workshops</Link></li>
+                                <li><Link to="/resources/?">Book Recommendations</Link></li>
                             </ul>
                         </li>
                     </ul>
