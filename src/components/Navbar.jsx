@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
@@ -12,22 +12,14 @@ function mobileNavToogle() {
 function Navbar({ pages, setSelectedTab, selectedTab }) {
     useEffect(() => {
 
-
-        /**
-         * Hide mobile nav on same-page/hash links
-         */
         document.querySelectorAll('#navmenu a').forEach(navmenu => {
             navmenu.addEventListener('click', () => {
                 if (document.querySelector('.mobile-nav-active')) {
                     mobileNavToogle();
                 }
             });
-
         });
 
-        /**
-         * Toggle mobile nav dropdowns
-         */
         document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
             navmenu.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -39,10 +31,37 @@ function Navbar({ pages, setSelectedTab, selectedTab }) {
     }, []);
 
     const displayActive = function (index) {
-        return selectedTab === index ? "active" : ""
+        // return selectedTab === index ? "active" : ""
+        return "";
     }
 
+    let socials = [
+        { name: "facebook", icon: "bi-facebook", hyperlink: "#" },
+        { name: "instagram", icon: "bi-instagram", hyperlink: "#" },
+        { name: "linkedin", icon: "bi-linkedin", hyperlink: "#" },
+        { name: "youtube", icon: "bi-youtube", hyperlink: "#" }
+    ]
+
     return (
+
+        // <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        //     <div class="container">
+        //         <a class="navbar-brand" href="#">Navbar</a>
+        //         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        //             <span class="navbar-toggler-icon"></span>
+        //         </button>
+        //         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        //             <div class="navbar-nav">
+        //                 <a class="nav-link active" aria-current="page" href="#">Home</a>
+        //                 <a class="nav-link" href="#">Features</a>
+        //                 <a class="nav-link" href="#">Pricing</a>
+        //                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        //             </div>
+        //         </div>
+        //     </div>
+        // </nav>
+
+
         <header id="header" className="header d-flex align-items-center sticky-top">
             <div className="container-fluid position-relative d-flex align-items-center justify-content-between">
 
@@ -56,41 +75,34 @@ function Navbar({ pages, setSelectedTab, selectedTab }) {
                         {pages.map(({ name, route }, index) => {
 
                             return (
-                                <li>
-                                    {/* <a href="" > */}
-                                    <Link to={route} key={index} className={displayActive(index)} onClick={(e) => {
+                                <li className={name === "Resources" ? "dropdown" : ""}>
+
+                                    <NavLink to={`${route}#`} key={index} className={displayActive(index)} onClick={(e) => {
                                         setSelectedTab(index);
-                                    }}>{name}</Link>
-                                    {/* </a> */}
+                                    }}>{name === "Resources" ? <><span>{name}</span><i className="bi bi-chevron-down toggle-dropdown"></i></> : name}
+                                    </NavLink>
+
+                                    {name === "Resources" &&
+                                        <ul>
+                                            <li><Link to="/resources/?">Past Podcast Episodes</Link></li>
+                                            <li><Link to="/resources/?">Past Events/Talks</Link></li>
+                                            <li><Link to="/resources/?">Past Workshops</Link></li>
+                                            <li><Link to="/resources/?">Book Recommendations</Link></li>
+                                        </ul>
+                                    }
                                 </li>
                             )
                         })}
-
-                        <li className="dropdown"><Link to="/resources"><span>Resources</span> <i
-                            className="bi bi-chevron-down toggle-dropdown"></i></Link>
-                            <ul>
-                                <li><Link to="/resources/?">Past Podcast Episodes</Link></li>
-                                <li><Link to="/resources/?">Past Events/Talks</Link></li>
-                                <li><Link to="/resources/?">Past Workshops</Link></li>
-                                <li><Link to="/resources/?">Book Recommendations</Link></li>
-                            </ul>
-                        </li>
                     </ul>
-                    {/* <ul>
-                        
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul> */}
                     <i onClick={mobileNavToogle} className="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
 
-
-
                 <div className="header-social-links">
-                    <a href="#" className="twitter"><i className="bi bi-twitter-x"></i></a>
-                    <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
-                    <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>
-                    <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
+                    {
+                        socials.map(({ name, icon, hyperlink }, index) => {
+                            return <a href={hyperlink} className={`bi ${icon}`} key={index}></a>
+                        })
+                    }
                 </div>
 
             </div>

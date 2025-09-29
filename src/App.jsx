@@ -13,6 +13,7 @@ import 'aos/dist/aos.css';
 import Contact from "./components/Contact";
 import { Route, Routes } from "react-router-dom";
 import ServiceInfo from "./components/ServiceInfo";
+import ResourcesHub from "./components/ResourcesHub";
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -30,7 +31,7 @@ function App() {
     });
   }, []);
 
-  let pages = [{ name: "Home", route: "/" }, { name: "About", route: "/about" }, { name: "Services", route: "/services" }, { name: "Contact", route: "/contact" }];
+  let pages = [{ name: "Home", route: "/" }, { name: "About", route: "/about" }, { name: "Services", route: "/services" }, { name: "Contact", route: "/contact" }, { name: "Resources", route: "/resources" }];
   let services = [{
     img: "assets/img/gallery/gallery-1.jpg",
     title: "Business/Executive/Entrepreneur Coaching or Mentorship",
@@ -40,7 +41,7 @@ function App() {
   },
   {
     img: "assets/img/gallery/gallery-2.jpg",
-    title: "Individual/PersonalCoaching or Counselling",
+    title: "Individual/Personal Coaching or Counselling",
     description: "Providing one-on-one coaching and counselling to support personal growth and development.",
     icon: "bi bi-bounding-box-circles",
     slug: "individual-coaching"
@@ -110,6 +111,7 @@ function App() {
         <Route path="/services" element={<Services services={services} />}></Route>
         <Route path="/services/:slug" element={<ServiceInfo services={services} />} />
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/resources" element={<ResourcesHub />} />
       </Routes>
 
       <a href="#" onClick={scrollToTop} id="scroll-top" className="scroll-top d-flex align-items-center justify-content-center"><i

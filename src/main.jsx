@@ -6,6 +6,9 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import './assets/css/main.css'
 import 'bootstrap/dist/js/bootstrap.js'
 
+import "swiper/css";
+import "swiper/css/pagination";
+
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 

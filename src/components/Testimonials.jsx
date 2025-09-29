@@ -6,46 +6,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 function Testimonials() {
-
-    // function initSwiper() {
-    //     document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
-    //         let config = JSON.parse(`            {
-    //           "loop": true,
-    //           "speed": 600,
-    //           "autoplay": {
-    //             "delay": 5000
-    //           },
-    //           "slidesPerView": "auto",
-    //           "pagination": {
-    //             "el": ".swiper-pagination",
-    //             "type": "bullets",
-    //             "clickable": true
-    //           },
-    //           "breakpoints": {
-    //             "320": {
-    //               "slidesPerView": 1,
-    //               "spaceBetween": 40
-    //             },
-    //             "1200": {
-    //               "slidesPerView": 3,
-    //               "spaceBetween": 1
-    //             }
-    //           }
-    //         }`);
-
-    //         console.log(config);
-
-    //         if (swiperElement.classList.contains("swiper-tab")) {
-    //             initSwiperWithCustomPagination(swiperElement, config);
-    //         } else {
-    //             new Swiper(swiperElement, config);
-    //         }
-    //     });
-    // }
-
-    useEffect(() => {
-    }, [])
-
     return (
         <section id="testimonials" className="testimonials section" >
 
@@ -168,7 +128,6 @@ function Testimonials() {
                     <div className="swiper-pagination"></div>
                 </Swiper>
             </div>
-
         </section>
     )
 }
