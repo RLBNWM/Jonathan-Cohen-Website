@@ -1,0 +1,30 @@
+/* Custom background for the entire list */
+.custom-list {
+    background-color: #1a1a1a;
+    color: #1a1a1a;
+
+}
+
+/* Change list items' background */
+.custom-list .list-group-item {
+    background-color: #1a1a1a;
+    /* New background for each item */
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #1a1a1a;
+    /* Text color for items */
+}
+
+/* Change hover state color */
+.custom-list .list-group-item:hover {
+    background-color: black !important;
+    /* New hover color */
+    color: white;
+    /* Change text color if you want */
+}
+
+/* Change active state color */
+.custom-list .list-group-item.active {
+    background-color: #4ac9e3 !important;
+    /* New active color */
+    color: black;
+}
