@@ -12,9 +12,13 @@ import "swiper/css/pagination";
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 
+const api = import.meta.env.BASE_URL;
+console.log(api);
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <App></App>
-  </BrowserRouter>
+  <StrictMode>
+    <BrowserRouter basename={api}>
+      <App></App>
+    </BrowserRouter>
+  </StrictMode>
 )

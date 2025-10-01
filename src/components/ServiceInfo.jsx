@@ -114,7 +114,7 @@ const ServiceInfo = ({ services }) => {
                         </div>
 
                         <div className="col-lg-4">
-                            <div className="list-group custom-list">
+                            <div className="list-group list custom-list">
                                 {services.map((service) => {
                                     return < NavLink to={`/services/${service.slug}`} className="list-group-item list-group-item-action">{service.title}</NavLink>
                                 })}
