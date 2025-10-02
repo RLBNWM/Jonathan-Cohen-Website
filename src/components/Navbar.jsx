@@ -66,7 +66,7 @@ function Navbar({ pages, setSelectedTab, selectedTab }) {
             <div className="container-fluid position-relative d-flex align-items-center justify-content-between">
 
                 <Link to="/" onClick={() => { setSelectedTab(0) }} className="logo d-flex align-items-center me-auto me-xl-0">
-                    <img style={{ borderRadius: "50%" }} src='/assets/img/logo.png' />
+                    <img style={{ borderRadius: "50%" }} src='assets/img/logo.png' />
                     <h1 className="sitename">Jonathan Cohen</h1>
                 </Link>
 

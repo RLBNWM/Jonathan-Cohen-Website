@@ -8,12 +8,10 @@ const Contact = () => {
             <div className="page-title" data-aos="fade">
                 <div className="heading">
                     <div className="container">
-                        <div className="row d-flex justify-content-center text-center">
+                        <div className="row d-flex justify-content-center text-lg-center text-sm-start">
                             <div className="col-lg-8">
                                 <h1>Contact</h1>
-                                <p className="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas
-                                    consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit
-                                    quaerat ipsum dolorem.</p>
+                                <p className="mb-0">Get in touch with me via email or a phone call! Alternatively you can book a free chemistry session below</p>
                             </div>
                         </div>
                     </div>

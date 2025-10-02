@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Breadcrumb from "./Breadcrumb";
 import Preloader from "./Preloader";
 
@@ -7,19 +8,15 @@ export default function About() {
             <div className="page-title" data-aos="fade">
                 <div className="heading">
                     <div className="container">
-                        <div className="row d-flex justify-content-center text-center">
+                        <div className="row d-flex justify-content-center text-sm-start text-lg-center">
                             <div className="col-lg-8">
                                 <h1>About</h1>
                                 <p className="mb-0">
-                                    Odio et unde deleniti. Deserunt numquam exercitationem.
-                                    Officiis quo odio sint voluptas consequatur ut a odio
-                                    voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi
-                                    ratione sint. Sit quaerat ipsum dolorem.
+                                    Personalized coaching to help you gain clarity, overcome obstacles, and thrive with purpose.
                                 </p>
-                                <a href="contact.html" className="cta-btn">
-                                    Available for Hire
-                                    <br />
-                                </a>
+                                <Link to="/contact" className="cta-btn">
+                                    Book a call for more info
+                                </Link>
                             </div>
                         </div>
                     </div>
