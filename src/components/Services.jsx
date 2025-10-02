@@ -10,11 +10,13 @@ const Services = ({ services }) => {
             <div className="page-title" data-aos="fade">
                 <div className="heading">
                     <div className="container">
-                        <div className="row d-flex justify-content-center text-center">
+                        <div className="row d-flex justify-content-center text-lg-center text-sm-start">
                             <div className="col-lg-8">
                                 <h1>Services</h1>
-                                <p className="mb-0"></p>
-                                <a href="contact.html" className="cta-btn">Available for Hire<br /></a>
+                                <p className="mb-0">
+                                    I offer a variety of mentoring, coaching, and reconstructive services, click on them below to learn more!
+                                </p>
+                                <Link to="/contact" className="cta-btn">Book a call for more info</Link>
                             </div>
                         </div>
                     </div>

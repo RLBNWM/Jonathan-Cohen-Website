@@ -28,3 +28,15 @@
     /* New active color */
     color: black;
 }
+
+.service-info-cta {
+    background-color: #4ac9e3;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.service-info-cta:hover {
+    background-color: #4ac9e3;
+    color: white;
+}

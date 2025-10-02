@@ -7,17 +7,17 @@ const ServiceInfo = ({ services }) => {
 
     const slug = useParams().slug;
     const service = services.find((service) => slug === service.slug);
+    console.log(service.customButton);
 
     return (
         <main className="main">
             <div className="page-title" data-aos="fade">
                 <div className="heading">
-                    <div className="container">
-                        <div className="row d-flex justify-content-center text-center">
-                            <div className="col-lg-8">
-                                <h1>{`${service.title} - Additonal Information`}</h1>
+                    <div className="container-fluid">
+                        <div className="row d-flex justify-content-center text-sm-start text-lg-center">
+                            <div className="col-lg-8 ">
+                                <h1>{service.title}</h1>
                                 <p className="mb-0">{service.description}</p>
-                                <a href="contact.html" className="cta-btn">Available for Hire<br /></a>
                             </div>
                         </div>
                     </div>
@@ -94,29 +94,30 @@ const ServiceInfo = ({ services }) => {
 
                         <div className="col-lg-8" data-aos="fade-up">
                             <div className="portfolio-description">
-                                <h2>This is an example of portfolio details</h2>
+                                {/* Introduction */}
                                 <p>
-                                    Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                                    <b>
+                                        {service.intro}
+                                    </b>
                                 </p>
+                                {/* Body */}
+                                <p dangerouslySetInnerHTML={{ __html: service.body }} />
+                                {/* Conclusion */}
                                 <p>
-                                    Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
+                                    <i>
+                                        {service.conclusion}
+                                    </i>
                                 </p>
-
-                                <p>
-                                    Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt assumenda tempore. Delectus voluptas necessitatibus est.
-                                </p>
-
-                                <p>
-                                    Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero. Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui nesciunt.
-                                </p>
-
                             </div>
+                            <Link to="/contact" className="btn service-info-cta my-5">
+                                {service.customButton ? service.customButton : "Book a call for more info"}
+                            </Link>
                         </div>
 
                         <div className="col-lg-4">
                             <div className="list-group list custom-list">
                                 {services.map((service) => {
-                                    return < NavLink to={`/services/${service.slug}`} className="list-group-item list-group-item-action">{service.title}</NavLink>
+                                    return < NavLink to={`/services/${service.slug}#`} className="list-group-item list-group-item-action">{service.title}</NavLink>
                                 })}
                             </div>
                         </div>
