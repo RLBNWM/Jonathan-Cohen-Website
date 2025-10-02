@@ -2,6 +2,7 @@ import Testimonials from "./Testimonials"
 import Gallery from "./Gallery"
 import Preloader from "./Preloader"
 import { Link } from "react-router-dom"
+import Affiliates from "./Affiliates"
 // import { useEffect } from "react"
 
 function HomePage({ services }) {
@@ -29,9 +30,9 @@ function HomePage({ services }) {
 
                 <Gallery services={services}></Gallery>
 
-                <Testimonials></Testimonials>
-                {/* <a href="#" id="scroll-top" className="scroll-top d-flex align-items-center justify-content-center"><i
-                className="bi bi-arrow-up-short"></i></a> */}
+                <Affiliates />
+
+                {/* <Testimonials></Testimonials> */}
 
                 <Preloader></Preloader>
             </main>

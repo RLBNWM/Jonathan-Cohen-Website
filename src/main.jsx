@@ -14,7 +14,6 @@ import { BrowserRouter } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop.jsx'
 
 const api = import.meta.env.BASE_URL;
-console.log(api);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
