@@ -12,10 +12,11 @@ function Gallery({ services }) {
                             <div className="col-xl-2 col-lg-4 col-md-6" key={index} >
                                 <div className="col-12 text-center">
                                     <Link to={`services/${service.slug}`}>
-                                        <div className="gallery-item h-100">
+                                        <div className="gallery-item h-100 ratio ratio-1x1">
                                             <img
                                                 src={service.img}
                                                 className="img-fluid"
+                                                style={{ objectFit: "cover" }}
                                                 alt=""
                                             />
                                             <div className="gallery-links d-flex align-items-center justify-content-center">

@@ -12,13 +12,11 @@ function HomePage({ services }) {
 
                 <section id="hero" className="hero section">
 
-                    <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-lg-6 text-center">
+                    <div className="container" >
+                        <div className="row justify-content-center m-3">
+                            <div className="col-xl-6 col-lg-8 text-center p-5" style={{ backgroundColor: "rgba(0, 0, 0, 0.65)", borderRadius: "15px" }}>
                                 <h2>
-                                    <span>I'm </span><span className="underlight">Jonathan Cohen</span>, an Experienced
-                                    <span className="underlight">Coach, Mentor,</span>
-                                    <span className="underlight">Entrepreneur</span> and <span className="underlight">Counsellor</span>
+                                    I'm Jonathan Cohen, an Experienced Coach, Mentor, Entrepreneur and Counsellor
                                 </h2>
                                 <p>My Passion and Purpose is to support and Help People, Communities, and Society Heal and Thrive</p>
                                 <Link to="/contact" className="btn-get-started">Book a free chemistry session<br /></Link>

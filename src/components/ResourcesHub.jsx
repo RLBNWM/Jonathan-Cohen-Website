@@ -41,7 +41,7 @@ const ResourcesHub = () => {
             <div className="page-title" data-aos="fade">
                 <div className="heading">
                     <div className="container">
-                        <div className="row d-flex justify-content-center text-lg-enter text-sm-start">
+                        <div className="row d-flex justify-content-center text-lg-center text-sm-start">
                             <div className="col-lg-8">
                                 <h1>Resource Hub</h1>
                                 <p className="mb-0">
