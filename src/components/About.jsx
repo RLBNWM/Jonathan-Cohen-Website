@@ -31,10 +31,11 @@ export default function About() {
             <section id="about" className="about section">
                 <div className="container" data-aos="fade-up" data-aos-delay="100">
                     <div className="row gy-4 justify-content-center">
-                        <div className="col-lg-4">
+                        <div className="col-lg-7">
                             <img
                                 src="assets/img/profile-img.jpg"
                                 className="img-fluid"
+                                style={{ objectFit: "cover" }}
                                 alt=""
                             />
                         </div>

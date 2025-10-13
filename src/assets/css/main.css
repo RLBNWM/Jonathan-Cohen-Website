@@ -1415,3 +1415,13 @@ section,
   /* keep image ratio; no crop */
   /* If you prefer cropping to fill the square, use: object-fit: cover; */
 }
+
+/* Resource Hub */
+
+.hide-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
