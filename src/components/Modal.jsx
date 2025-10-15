@@ -9,8 +9,7 @@ const Modal = ({ id, title, contents }) => {
                         <h5 className="modal-title" id={`${id}Label`}>{title}</h5>
                         <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div className="modal-body">
-                        {contents}
+                    <div className="modal-body" dangerouslySetInnerHTML={{ __html: contents }}>
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn" style={{ backgroundColor: "#4ac9e3", borderColor: "#4ac9e3" }} data-bs-dismiss="modal">Close</button>
