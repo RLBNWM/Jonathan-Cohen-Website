@@ -19,7 +19,7 @@ function HomePage({ services }) {
                                     I'm Jonathan Cohen, an Experienced Coach, Mentor, Entrepreneur and Counsellor
                                 </h2>
                                 <p>My Passion and Purpose is to support and Help People, Communities, and Society Heal and Thrive</p>
-                                <Link to="/contact" className="btn-get-started">Book a free chemistry session<br /></Link>
+                                <Link to="/contact" className="btn-get-started">Book your first session<br /></Link>
                             </div>
                         </div>
                     </div>

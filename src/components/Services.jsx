@@ -14,9 +14,12 @@ const Services = ({ services }) => {
                             <div className="col-lg-8">
                                 <h1>Services</h1>
                                 <p className="mb-0">
-                                    I offer a variety of mentoring, coaching, and reconstructive services, click on them below to learn more!
+                                    I offer a variety of mentoring,
+                                    coaching, healing and educational
+                                    services. Click on the icons below
+                                    to find out more.
                                 </p>
-                                <Link to="/contact" className="cta-btn">Book a call for more info</Link>
+                                <Link to="/contact" className="cta-btn">Book a call with Jonathan Cohen</Link>
                             </div>
                         </div>
                     </div>

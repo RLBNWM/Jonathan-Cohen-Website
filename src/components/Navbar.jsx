@@ -67,7 +67,10 @@ function Navbar({ pages, setSelectedTab, selectedTab }) {
 
                 <Link to="/" onClick={() => { setSelectedTab(0) }} className="logo d-flex align-items-center me-auto me-xl-0">
                     <img style={{ borderRadius: "50%" }} src='assets/img/logo.png' />
-                    <h1 className="sitename">Jonathan Cohen</h1>
+                    <div className="mx-2">
+                        <h1 className="sitename">Jonathan Cohen</h1>
+                        <h1 className="sitename">Holistic Coaching</h1>
+                    </div>
                 </Link>
 
                 <nav id="navmenu" className="navmenu">
@@ -84,10 +87,10 @@ function Navbar({ pages, setSelectedTab, selectedTab }) {
 
                                     {name === "Resources" &&
                                         <ul>
-                                            <li><Link to="/resources/?">Past Podcast Episodes</Link></li>
-                                            <li><Link to="/resources/?">Past Events/Talks</Link></li>
-                                            <li><Link to="/resources/?">Past Workshops</Link></li>
-                                            <li><Link to="/resources/?">Book Recommendations</Link></li>
+                                            <li><Link to="/resources#books">Book Recommendations</Link></li>
+                                            <li><Link to="/resources#supplements">Supplement Recommendations</Link></li>
+                                            <li><Link className="disabled">Past Events/Talks (Coming soon!)</Link></li>
+                                            <li><Link className="disabled ">Past Workshops (Coming soon!)</Link></li>
                                         </ul>
                                     }
                                 </li>
@@ -98,11 +101,11 @@ function Navbar({ pages, setSelectedTab, selectedTab }) {
                 </nav>
 
                 <div className="header-social-links">
-                    {
+                    {/* {
                         socials.map(({ name, icon, hyperlink }, index) => {
                             return <a href={hyperlink} className={`bi ${icon}`} key={index}></a>
                         })
-                    }
+                    } */}
                 </div>
 
             </div>

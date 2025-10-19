@@ -75,7 +75,7 @@ const Contact = () => {
                         <div className="row d-flex justify-content-center text-lg-center text-sm-start">
                             <div className="col-lg-8">
                                 <h1>Contact</h1>
-                                <p className="mb-0">Get in touch with me via email or a phone call! Alternatively you can book a free chemistry session below</p>
+                                <p className="mb-0">Get in touch with me via email or a phone call!</p>
                             </div>
                         </div>
                     </div>
@@ -131,7 +131,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <form className="php-email-form" onSubmit={handleSubmit} data-aos="fade-up" data-aos-delay="300">
+                    {/* <form className="php-email-form" onSubmit={handleSubmit} data-aos="fade-up" data-aos-delay="300">
                         <div className="row gy-4">
 
                             <div className="col-md-6">
@@ -199,7 +199,7 @@ const Contact = () => {
                             </div>
 
                         </div>
-                    </form>
+                    </form> */}
 
                 </div>
 

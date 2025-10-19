@@ -18,7 +18,8 @@ const ResourcesHub = () => {
             <p>What stood out to me was how Smith simplifies emotional suffering. Her writing doesn’t diagnose—it connects. I found myself thinking of young adults and parents in South Africa who often lack access to therapy or the words to describe what they feel. This book could help bridge that gap.</p>
             <p>If there’s one area I’d love to see more of, it’s cultural sensitivity. The advice lands beautifully in Western contexts, but I wonder how it might resonate in communities where mental health still feels taboo or spiritualised. Still, her clarity, kindness, and humility shine through every page.</p>
             <p>A comforting companion in difficult moments—especially for those who don’t know where to begin.</p>
-            `
+            `,
+            cover: "assets/img/books/OpenWhen.jpg"
         },
         {
             title: "Mind the Gap by Dr Karen Gurney",
@@ -27,7 +28,8 @@ const ResourcesHub = () => {
             <p>In my work with men and teenagers, I observe how sexual narratives develop early—often without words. Mind the Gap provides a hopeful alternative story. It offers language for feelings people find hard to express. Gurney’s honesty and clinical foundation create space for genuine healing to start.</p>
             <p>That said, I’d love to see a future edition explore gender and sexuality across a broader range of cultural contexts. South Africa’s diverse norms, values, and access to sex education deserve attention—and could benefit from more voices like hers engaging with it directly.</p>
             <p>Still, this book is a gift. I’ve recommended it more times than I can count. A needed reminder that desire isn’t broken—it's layered.</p>
-            `
+            `,
+            cover: "assets/img/books/MindTheGap.jpg"
         },
         {
             title: "Nexus by Yuval Noah Harari",
@@ -36,7 +38,8 @@ const ResourcesHub = () => {
             <p>What I appreciated most was his exploration of how digital life is reshaping identity and vulnerability—two topics close to my heart. Harari doesn’t just critique; he asks better questions than most futurists dare to.</p>
             <p>Sometimes, Nexus assumes a universal outlook that overlooks inequalities in access, context, or culture. As someone living and working in South Africa, I sensed the tension between Harari’s global analysis and our local realities—especially regarding connectivity, education, and psychological safety.</p>
             <p>Even so, this is one of those books that leaves a lasting impression. I may not agree with every conclusion, but I appreciate every question it prompted me to ask. If you’re curious about the future of human relationships, begin here.</p>
-            `
+            `,
+            cover: "assets/img/books/Nexus.jpg"
         },
     ]
     let supplements = [
@@ -53,7 +56,8 @@ const ResourcesHub = () => {
             <p>
                 I’d love to see more accessible, longitudinal research tailored to local South African demographics, but this is a promising wellness support worth exploring – with medical guidance, of course.
             </p>
-`
+`,
+            cover: "assets/img/supplements/novanad.webp"
         },
         {
             title: "Prime Day & Prime Night",
@@ -62,7 +66,8 @@ const ResourcesHub = () => {
             <p>I’ve trialled countless nootropics and adaptogens, and the Prime Day/Night combo is one of the few that genuinely delivered balance without overstimulation or grogginess. Prime Day sharpened my focus and mood subtly but noticeably, especially after recently giving up caffeine. Prime Night, on the other hand, supported restful, high-quality sleep without the knockout effect of heavier supplements or medications.</p>
             <p>What I appreciate most is the formulation’s intention—it’s thoughtful, not gimmicky. There’s no “crash” or dependency loop, just sustainable support for energy during the day and proper rest at night.</p>
             <p>Of course, supplement responses are individual, but for me, this blend aligned well with my nervous system and lifestyle.</p>
-            `
+            `,
+            cover: "assets/img/supplements/prime_day_night.webp"
         },
         {
             title: "Naked Protein Bars",
@@ -71,7 +76,8 @@ const ResourcesHub = () => {
             <p>Clean protein options are surprisingly hard to come by, especially those that don’t taste like punishment, have no unnatural additives or leave you with gut regret. I was lucky to test Nakd Protein Bars ahead of their South African launch, and they check all three boxes: nutritious, natural, and fantastic taste (in all the flavours).</p>
             <p>What I loved was the simplicity—real ingredients, no fake sweetness overload, and a decent protein-to-carb ratio. These worked well as a post-workout snack or quick fuel during demanding days. I also found that they really helped keep my energy levels (both mental and physical) consistent during tennis matches that went beyond two sets (sometimes over two hours). Proved to me that Djokovic eating natural food only (dates and nuts) in between changeovers really does provide sustainable energy without the drops.</p>
             <p>It’s still early days to determine how significant natural ingredients are to South Africans, but if they adhere to this integrity-first approach, they will fill a genuine gap in our health food sector by educating people about the harm of misinformation regarding additives and the negative metabolic effects of unnatural ingredients.</p>
-            `
+            `,
+            cover: "assets/img/supplements/protein_bars.png"
         },
     ]
 
@@ -128,7 +134,7 @@ const ResourcesHub = () => {
                         }}
                     >
                         {
-                            books.map(({ title, text }, index) => {
+                            books.map(({ title, text, cover }, index) => {
                                 return (
                                     <>
                                         <SwiperSlide key={index}>
@@ -136,6 +142,7 @@ const ResourcesHub = () => {
                                                 <div className="card-header">
                                                     Featured Books
                                                 </div>
+                                                <img src={cover} class="card-img-top" style={{ objectFit: 'contain', height: "300px", width: "auto", aspectRatio: "1x1" }} alt="..."></img>
                                                 <div className="card-body">
                                                     <h5 className="card-title"><b>{title}</b></h5>
                                                     <p className="card-text hide-text" dangerouslySetInnerHTML={{ __html: text }} />
@@ -180,13 +187,14 @@ const ResourcesHub = () => {
                         }}
                     >
                         {
-                            supplements.map(({ title, text }, index) => {
+                            supplements.map(({ title, text, cover }, index) => {
                                 return (
                                     <SwiperSlide key={index}>
                                         <div className="card bg-dark text-light">
                                             <div className="card-header">
                                                 Featured Supplements
                                             </div>
+                                            <img src={cover} class="card-img-top" style={{ objectFit: 'contain', height: "300px", width: "auto", aspectRatio: "1x1" }} alt="..."></img>
                                             <div className="card-body">
                                                 <h5 className="card-title"><b>{title}</b></h5>
                                                 <p className="card-text hide-text" dangerouslySetInnerHTML={{ __html: text }} />

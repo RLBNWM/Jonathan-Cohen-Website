@@ -27,7 +27,7 @@ function App() {
       }
     }
 
-    document.addEventListener('scroll', toggleScrollTop);
+    // document.addEventListener('scroll', toggleScrollTop);
 
     AOS.init({
       duration: 1000,   // animation duration in ms
@@ -39,7 +39,7 @@ function App() {
   let services = [{
     img: "assets/img/gallery/gallery-1.jpg",
     title: "Coaching or Mentorship",
-    description: "Helping business leaders and entrepreneurs achieve their goals through personalized coaching and mentorship.",
+    description: "Helping business leaders, executives, entrepreneurs and private individuals achieve their goals through personalised coaching, mentorship and support.",
     icon: "bi bi-activity",
     slug: "business-exec-coaching",
     intro: "Whether you’re navigating a career shift, launching a new venture, deepening your relationships, or simply seeking clarity, I offer coaching and mentorship grounded in lived experience, evidence-based methods, and a holistic lens.",

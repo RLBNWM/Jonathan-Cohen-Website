@@ -12,10 +12,10 @@ export default function About() {
                             <div className="col-lg-8">
                                 <h1>About</h1>
                                 <p className="mb-0">
-                                    Personalized coaching to help you gain clarity, overcome obstacles, and thrive with purpose.
+                                    Personalised coaching to help you gain clarity, overcome obstacles, and thrive with purpose.
                                 </p>
                                 <Link to="/contact" className="cta-btn">
-                                    Book a call for more info
+                                    Book a call with Jonathan Cohen
                                 </Link>
                             </div>
                         </div>
@@ -31,24 +31,28 @@ export default function About() {
             <section id="about" className="about section">
                 <div className="container" data-aos="fade-up" data-aos-delay="100">
                     <div className="row gy-4 justify-content-center">
-                        <div className="col-lg-7">
-                            <img
-                                src="assets/img/profile-img.jpg"
-                                className="img-fluid"
-                                style={{ objectFit: "cover" }}
-                                alt=""
-                            />
+                        <div className="row justify-content-center">
+                            <div className="col-lg-8 col-md-10">
+                                <img
+                                    src="assets/img/profile-img.jpg"
+                                    className="img-fluid"
+                                    style={{ objectFit: "cover" }}
+                                    alt=""
+                                />
+                            </div>
                         </div>
-                        <div className="col-lg-5 content">
+                        <div className="col-lg-8 col-md-10 content">
                             <h2>
                                 Jonathan Cohen - Coach, Mentor, Entrpreneur &amp; Counsellor.
                             </h2>
-                            <p className="fst-italic py-3">
+                            <p className="py-3">
                                 Jonathan Cohen is a passionate and visionary holistic coach
-                                dedicated to helping individuals unlock their full potential.
-                                With over 15 years of experience in personal development,
-                                leadership training, and emotional well-being, Jonathan has
-                                become a respected figure in the wellness and coaching industry.
+                                dedicated to helping individuals unlock their full potential. With
+                                over 20 years of experience in building start-ups, mergers and
+                                acquisitions, personal development, leadership training,
+                                mediation, change management, and psychological, physical,
+                                and emotional well-being, Jonathan has become a respected
+                                figure in the wellness and coaching industry.
                             </p>
                             {/* <div className="row">
                                 <div className="col-lg-6">
@@ -94,25 +98,30 @@ export default function About() {
                             </div> */}
 
                             <p className="py-3">
-                                His unique coaching style blends psychology, mindfulness, and
-                                strategic planning to empower clients with actionable tools for
-                                long-term transformation. Jonathan holds certifications in
-                                executive coaching, NLP (Neuro-Linguistic Programming), and
-                                integrative wellness practices.
+                                His unique coaching style blends psychology, mindfulness, and a
+                                personalised, adaptable approach to empower clients with
+                                actionable tools for long-term transformation. Jonathan holds
+                                postgraduate qualifications and certifications in commerce,
+                                executive/business coaching, psychology, nutrition and
+                                integrative wellness practices
                             </p>
                             <p className="py-3">
                                 As the founder of Jonathan Cohen Holistic Coaching, his mission
-                                is to foster a supportive space where individuals can explore
-                                their purpose, overcome personal barriers, and live with
-                                intention.
+                                is to foster a supportive space where individuals, teams and
+                                organisations can explore their purpose, overcome barriers, and
+                                live with intention, joy and meaning.
                             </p>
                             <p className="py-3">
                                 Outside of coaching, Jonathan is an avid writer, speaker, and
-                                advocate for mental health awareness. His workshops and talks
-                                have inspired thousands across South Africa and beyond.
+                                advocate for mental health awareness, sexuality/sexology,
+                                education, relationships, and childhood development. His
+                                workshops and talks have inspired thousands across South
+                                Africa and beyond.
                             </p>
                         </div>
                     </div>
+
+
                 </div>
             </section>
 
