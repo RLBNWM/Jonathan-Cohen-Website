@@ -131,80 +131,19 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    {/* <form className="php-email-form" onSubmit={handleSubmit} data-aos="fade-up" data-aos-delay="300">
-                        <div className="row gy-4">
+                </div>
 
-                            <div className="col-md-6">
-                                <input
-                                    type="text"
-                                    id='name'
-                                    name="name"
-                                    className="form-control"
-                                    placeholder="Your Name & Surname"
-                                    onChange={handleChange}
-                                    value={formData.name}
-                                    required disabled={isLoading} />
-                            </div>
-
-                            <div className="col-md-6 ">
-                                <input
-                                    type="email"
-                                    id='email'
-                                    className="form-control"
-                                    name="email"
-                                    placeholder="Your Email Address"
-                                    onChange={handleChange}
-                                    value={formData.email}
-                                    required
-                                    disabled={isLoading}
-                                />
-                            </div>
-
-                            <div className="col-md-12">
-                                <input
-                                    type="datetime-local"
-                                    id='dateTime'
-                                    className="form-control"
-                                    name="dateTime"
-                                    placeholder="Subject"
-                                    onChange={handleChange}
-                                    value={formData.dateTime}
-                                    required
-                                    disabled={isLoading}
-                                />
-                            </div>
-
-                            <div className="col-md-12">
-                                <textarea
-                                    className="form-control"
-                                    name="details"
-                                    id='details'
-                                    rows="6"
-                                    placeholder="Message"
-                                    onChange={handleChange}
-                                    value={formData.details}
-                                    required
-                                    disabled={isLoading}
-                                ></textarea>
-                            </div>
-
-                            <div className="col-md-12 text-center">
-                                {status.message && (
-                                    <div className={`alert alert-${status.type}`}>{status.message}</div>
-                                )}
-
-                                <button type="submit" disabled={isLoading}>
-                                    {isLoading ? "Booking..." : "Book Now"}
-                                </button>
-                            </div>
-
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-12" style={{ height: "80vh" }}>
+                            <div class="calendly-inline-widget" data-url="https://calendly.com/rossbeukes-networkmedia/30min?background_color=000000&text_color=fafafa&primary_color=4ac9e3" style={{ height: "100%", width: "auto" }} ></div>
                         </div>
-                    </form> */}
-
+                    </div>
                 </div>
 
             </section>
             <Preloader></Preloader>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         </main>
     )
 }
