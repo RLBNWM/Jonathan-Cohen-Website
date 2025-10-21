@@ -1429,3 +1429,15 @@ section,
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.scroll-box {
+  overflow: visible;
+  max-height: none;
+}
+
+@media (min-width: 992px) {
+  .scroll-box {
+    overflow: auto;
+    max-height: 100%;
+  }
+}

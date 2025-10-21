@@ -30,7 +30,7 @@ export default function About() {
 
             <section id="about" className="about section">
                 <div className="container" data-aos="fade-up" data-aos-delay="100">
-                    <div className="row justify-content-center align-items-stretch" >
+                    <div className="row justify-content-center" >
                         <div className="col-lg-6 col-md-12" >
                             <img
                                 src="assets/img/profile-img.jpg"
@@ -40,7 +40,7 @@ export default function About() {
                             />
                         </div>
                         <div className="col-lg-6 col-md-12 my-3">
-                            <div class="h-100 overflow-lg-auto" style={{ maxHeight: "75vh" }}>
+                            <div className="scroll-box h-100">
                                 <h2>
                                     Jonathan Cohen - Coach, Mentor, Entrpreneur &amp; Counsellor.
                                 </h2>
