@@ -66,10 +66,10 @@ function Navbar({ pages, setSelectedTab, selectedTab }) {
             <div className="container-fluid position-relative d-flex align-items-center justify-content-between">
 
                 <Link to="/" onClick={() => { setSelectedTab(0) }} className="logo d-flex align-items-center me-auto me-xl-0">
-                    <img style={{ borderRadius: "50%" }} src='assets/img/logo.png' />
+                    <img style={{ borderRadius: "50%", height: "100%", width: "auto" }} src='assets/img/logo.png' />
                     <div className="mx-2">
                         <h1 className="sitename">Jonathan Cohen</h1>
-                        <h1 className="sitename">Holistic Coaching</h1>
+                        <h4>Holistic Coaching</h4>
                     </div>
                 </Link>
 

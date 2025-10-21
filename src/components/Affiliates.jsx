@@ -11,8 +11,8 @@ export default function Affiliates() {
         <section className="mx-2">
 
             <div className="container-fluid section-title" data-aos="fade-up" data-aos-delay="100">
-                <h2>Affiliates </h2>
-                <p>In Partnership With</p>
+                <h2>Affiliates</h2>
+                <p>In association with</p>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="100" className="container-fluid">

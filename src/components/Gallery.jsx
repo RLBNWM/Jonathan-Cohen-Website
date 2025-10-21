@@ -5,6 +5,10 @@ function Gallery({ services }) {
 
     return (
         <section id="gallery" className="gallery section">
+            <div className="container-fluid section-title" data-aos="fade-up" data-aos-delay="100">
+                <h2>Services</h2>
+                <p>My services</p>
+            </div>
             <div className="container-fluid" data-aos="fade-up" data-aos-delay="100">
                 <div className="row gy-4 justify-content-center">
                     {services.map((service, index) => {

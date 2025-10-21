@@ -162,7 +162,7 @@ const ResourcesHub = () => {
             <section className='mx-2'>
                 <div className="container-fluid section-title" data-aos="fade">
                     <h2>Supplements</h2>
-                    <p>The Best Supplements For Your Wellbeing!</p>
+                    <p>Jonathan’s latest supplement/nutrition reviews</p>
                 </div>
 
                 <div className="container-fluid" data-aos="fade-up" data-aos-delay="100">
