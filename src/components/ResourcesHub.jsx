@@ -118,6 +118,8 @@ const ResourcesHub = () => {
                         pagination={{
                             clickable: false
                         }}
+                        grabCursor={true}
+                        style={{ paddingRight: '40px' }}
                         breakpoints={{
                             320: {
                                 slidesPerView: 2,
@@ -142,10 +144,10 @@ const ResourcesHub = () => {
                                                 <div className="card-header">
                                                     Featured Books
                                                 </div>
-                                                <img src={cover} class="card-img-top" style={{ objectFit: 'contain', height: "300px", width: "auto", aspectRatio: "1x1" }} alt="..."></img>
+                                                <img src={cover} class="card-img-top resource-card-img" alt="..."></img>
                                                 <div className="card-body">
-                                                    <h5 className="card-title"><b>{title}</b></h5>
-                                                    <p className="card-text hide-text" dangerouslySetInnerHTML={{ __html: text }} />
+                                                    <h5 className="card-title hide-text" rowspan="4"><b>{title}</b></h5>
+                                                    <p className="card-text hide-text" dangerouslySetInnerHTML={{ __html: text }} ></p>
                                                     <button data-bs-toggle="modal" data-bs-target={`#${index}-book-modal`} style={{ backgroundColor: "#4ac9e3", borderColor: "#4ac9e3" }} className="btn btn-primary">Read More</button>
                                                 </div>
                                             </div>
@@ -157,7 +159,7 @@ const ResourcesHub = () => {
                     </Swiper>
                 </div>
 
-            </section>
+            </section >
 
             <section className='mx-2'>
                 <div className="container-fluid section-title" data-aos="fade">
@@ -171,6 +173,8 @@ const ResourcesHub = () => {
                         pagination={{
                             clickable: false
                         }}
+                        grabCursor={true}
+                        style={{ paddingRight: '40px' }}
                         breakpoints={{
                             320: {
                                 slidesPerView: 2,
@@ -194,7 +198,7 @@ const ResourcesHub = () => {
                                             <div className="card-header">
                                                 Featured Supplements
                                             </div>
-                                            <img src={cover} class="card-img-top" style={{ objectFit: 'contain', height: "300px", width: "auto", aspectRatio: "1x1" }} alt="..."></img>
+                                            <img src={cover} class="card-img-top resource-card-img" alt="..."></img>
                                             <div className="card-body">
                                                 <h5 className="card-title"><b>{title}</b></h5>
                                                 <p className="card-text hide-text" dangerouslySetInnerHTML={{ __html: text }} />
@@ -209,13 +213,17 @@ const ResourcesHub = () => {
                 </div>
             </section>
 
-            {books.map(({ title, text }, index) => {
-                return <Modal id={`${index}-book-modal`} title={title} contents={text}></Modal>;
-            })}
+            {
+                books.map(({ title, text }, index) => {
+                    return <Modal id={`${index}-book-modal`} title={title} contents={text}></Modal>;
+                })
+            }
 
-            {supplements.map(({ title, text }, index) => {
-                return <Modal id={`${index}-supplements-modal`} title={title} contents={text}></Modal>;
-            })}
+            {
+                supplements.map(({ title, text }, index) => {
+                    return <Modal id={`${index}-supplements-modal`} title={title} contents={text}></Modal>;
+                })
+            }
 
         </>
     )

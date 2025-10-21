@@ -1436,9 +1436,21 @@ section,
   max-height: none;
 }
 
+.resource-card-img {
+  object-fit: cover;
+  height: 250px;
+  width: auto;
+  aspect-ratio: 1x1;
+}
+
 @media (min-width: 992px) {
   .scroll-box {
     overflow: auto;
     max-height: 100%;
+  }
+
+  .resource-card-img {
+    object-fit: contain;
+    height: 300px;
   }
 }
