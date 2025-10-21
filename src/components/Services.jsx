@@ -19,7 +19,7 @@ const Services = ({ services }) => {
                                     services. Click on the icons below
                                     to find out more.
                                 </p>
-                                <Link to="/contact" className="cta-btn">Book a call with Jonathan Cohen</Link>
+                                <Link to="/contact" className="cta-btn">Book a call with Jonathan</Link>
                             </div>
                         </div>
                     </div>

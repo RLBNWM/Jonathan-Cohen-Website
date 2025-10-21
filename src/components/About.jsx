@@ -15,7 +15,7 @@ export default function About() {
                                     Personalised coaching to help you gain clarity, overcome obstacles, and thrive with purpose.
                                 </p>
                                 <Link to="/contact" className="cta-btn">
-                                    Book a call with Jonathan Cohen
+                                    Book a call with Jonathan
                                 </Link>
                             </div>
                         </div>
